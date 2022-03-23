@@ -35,4 +35,7 @@ public class TestInit {
             e.printStackTrace();
         }
     }
+    public void openUrl (String site) {
+        driver.get(site);
+    }
 }
