@@ -13,6 +13,7 @@ public class TrainingTest extends TestInit {
         HomePage homePage = new HomePage(driver);
         openUrl("https://www.google.com.ua/");
         homePage.enterSentence().sendKeys("найкраще місто на землі бровари");
+        sleep(2);
         homePage.enterBtnOk().click();
         homePage.clickLink().get(3).click();
 
