@@ -7,12 +7,35 @@ import pageobject.BasePage;
 
 public class HomePage extends BasePage {
 
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
 
-    public WebElement clickBlog() {
-        return driver.findElement(By.xpath(""));
+    public WebElement clickButtonSignIn() {
+        return findElementByXpath("//a[@id='menu-signin']");
+    }
+
+    public WebElement clickGoiItcookie() {
+        return findElementByXpath("//button[contains(text(), 'Got it')]");
+
+    }
+
+    public WebElement clickEmailWrite() {
+        return findElementByXpath("//input[@id='email']");
+
+    }
+
+    public WebElement GetPasswordandWrite() {
+        return findElementByXpath("//input[@id='password']");
+    }
+
+    public WebElement GetSingInclick() {
+        return driver.findElement(By.xpath("//button[@id='signin']"));
+    }
+
+    public WebElement inCorrectLogin() {
+        return findElementByXpath("//span[contains(text(), 'The login information you entered is incorrect.')]");
     }
 }
