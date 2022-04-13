@@ -18,7 +18,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement enterBtnOk() {
-        return findElementByXpath("//input[@class='gNO89b']");
+        return findElementByXpath("//input[@value='Поиск в Google']");
     }
 
     public List<WebElement> clickLink() {
