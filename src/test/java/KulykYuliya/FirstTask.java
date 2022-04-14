@@ -18,3 +18,4 @@ public class FirstTask {
         Assert.assertTrue(driver.getCurrentUrl().contains("eat"));
         driver.quit();
     }
+}
