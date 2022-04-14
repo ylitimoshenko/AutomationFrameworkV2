@@ -14,7 +14,7 @@ public class FifthTestForGit1 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa2.eatstreet.com/");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//a[@id='menu-my-account']")).click();
+        driver.findElement(By.xpath("//a[@id='menu-signin']")).click();
         Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
         driver.quit();
 

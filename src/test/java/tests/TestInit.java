@@ -38,6 +38,7 @@ public class TestInit {
     public void openUrl (String site) {
         driver.get(site);
     }
+
     public void fullscreen(){
         driver.manage().window().maximize();
     }
