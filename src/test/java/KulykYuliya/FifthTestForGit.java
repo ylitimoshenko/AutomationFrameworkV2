@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FifthTestForGit1 {
+public class FifthTestForGit{
     @Test
     public void FourthTestGorGit() {
         WebDriverManager.chromedriver().setup();
