@@ -21,7 +21,7 @@ public abstract class BasePage {
         WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
         return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public  BasePage(WebDriver driver) {
         this.driver = driver;
