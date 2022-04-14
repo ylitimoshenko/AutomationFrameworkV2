@@ -18,4 +18,8 @@ public class HomePage extends BasePage {
     public WebElement getAllJobs() {
         return driver.findElement(By.xpath("//h2[contains(text(), 'All Jobs')]"));
     }
+
+    public WebElement getBlogBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
+    }
 }
