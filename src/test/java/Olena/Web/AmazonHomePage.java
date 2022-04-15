@@ -1,4 +1,4 @@
-package Olena;
+package Olena.Web;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
