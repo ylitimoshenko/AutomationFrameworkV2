@@ -1,5 +1,6 @@
-package Olena;
+package OlenaLevychkina.Tests;
 
+import OlenaLevychkina.Web.AmazonHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
