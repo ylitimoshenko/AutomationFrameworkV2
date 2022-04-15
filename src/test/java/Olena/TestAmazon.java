@@ -6,7 +6,7 @@ import tests.TestInit;
 
 public class TestAmazon extends TestInit {
     @Test
-    public void checkDisplay(){
+    public void checkErrorMsgAmazon(){
         AmazonHomePage amazonHomePage = new AmazonHomePage(driver);
         amazonHomePage.navigateAmazon();
         fullscreen();
