@@ -1,4 +1,4 @@
-package KulykYuliya;
+package KulykYuliya.Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -7,16 +7,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FifthTestForGit{
+public class FirstTask {
     @Test
-    public void FourthTestGorGit() {
+    public void TakeOptionPartnerWithUs() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa2.eatstreet.com/");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//a[@id='menu-signin']")).click();
-        Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
+        driver.findElement(By.xpath("//a[@ng-if='showPartnerLink']")).click();
+        Assert.assertTrue(driver.getCurrentUrl().contains("eat"));
         driver.quit();
-
     }
 }
