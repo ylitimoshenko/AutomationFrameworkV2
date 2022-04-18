@@ -19,20 +19,21 @@ public class HomePage extends BasePage {
     public WebElement clickBtnSingIn() {
         return findElementByXpath("//a[@id='menu-signin']");
 
-    public void OpenSiteEatStreet() {
-        driver.get("https://qa2.eatstreet.com/");
+//        public void OpenSiteEatStreet () {
+//            driver.get("https://qa2.eatstreet.com/");
+//        }
+//
+//        public WebElement closeBtnGotIt () {
+//            return findElementByXpath("//button[contains(text(), 'Got it')]");
+//        }
+//
+//        public WebElement getBtnSingIn () {
+//            return findElementByXpath("//a[@id='menu-signin']");
+//        }
+//
+//        public WebElement IncorrectDataToLogIn () {
+//            return findElementByXpath("//span[@ng-if='signinCtrl.loginInvalid']");
+//
+//        }
+ }
     }
-
-    public WebElement closeBtnGotIt() {
-        return findElementByXpath("//button[contains(text(), 'Got it')]");
-    }
-
-    public WebElement getBtnSingIn() {
-        return findElementByXpath("//a[@id='menu-signin']");
-    }
-
-    public WebElement IncorrectDataToLogIn() {
-        return findElementByXpath("//span[@ng-if='signinCtrl.loginInvalid']");
-
-    }
-}
