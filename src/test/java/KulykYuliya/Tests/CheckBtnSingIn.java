@@ -10,7 +10,7 @@ public class CheckBtnSingIn extends TestInit {
     @Test
     public void LogOnEatStreet() {
         HomePage homePage = new HomePage(driver);
-        LoginPage loginPage = new LoginPage(driver);
+        KulykYuliya.Pages.LoginPage loginPage = new KulykYuliya.Pages.LoginPage(driver);
         homePage.OpenSiteEatStreet();
         fullscreen();
         homePage.closeBtnGotIt().click();
