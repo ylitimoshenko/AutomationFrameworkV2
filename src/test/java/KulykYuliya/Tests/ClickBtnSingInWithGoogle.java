@@ -1,20 +1,20 @@
 package KulykYuliya.Tests;
 
 import KulykYuliya.Pages.HomePage;
-import KulykYuliya.Pages.RgPage;
+import KulykYuliya.Pages.RegistrationPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
 public class ClickBtnSingInWithGoogle extends TestInit {
     @Test
-    public void EatStrrt() {
+    public void SingInWithGoogleEatStreeet() {
         HomePage homePage = new HomePage(driver);
-        RgPage rgPage = new RgPage(driver);
+        RegistrationPage registrationPage = new RegistrationPage(driver);
         homePage.OpenSiteEatStrt();
         fullscreen();
         homePage.clickBtnSingIn().click();
-        rgPage.clickSinfInWithGoogle().click();
+        registrationPage.clickSinfInWithGoogle().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("signin"));
         driver.quit();
 
