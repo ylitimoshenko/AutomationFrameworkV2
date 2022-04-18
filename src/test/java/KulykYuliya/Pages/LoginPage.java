@@ -11,7 +11,6 @@ public class LoginPage extends BasePage {
 
     public WebElement enterEmailInField() {
         return findElementByXpath("//input[@id='email']");
-
     }
 
     public WebElement enterPassInField() {
