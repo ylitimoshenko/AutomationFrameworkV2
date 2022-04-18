@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
-public class LogOn extends BasePage {
-    public LogOn(WebDriver driver) {
+public class LoginPage extends BasePage {
+    public LoginPage(WebDriver driver) {
         super(driver);
     }
 
