@@ -14,14 +14,14 @@ public class FindRestaurantsWithDessertUnArizona extends TestInit {
         HomePage homePage = new HomePage(driver);
         EnterPage enterPage = new EnterPage(driver);
         RestPage restPage = new RestPage(driver);
-        homePage.OpenSiteEatStreet();
+        homePage.OpenSiteEatStrt();
         fullscreen();
-        homePage.enterAddress();
+        homePage.enterAdress();
         homePage.sleep(3);
-        homePage.clichFed().click();
+        homePage.clickFed().click();
         enterPage.clickBtnGotIt().click();
         enterPage.choiseRestaurants().click();
-        restPage.findDesserts().click();
+        restPage.findDesserts();
         Assert.assertTrue(restPage.CheckRest().isDisplayed());
         driver.quit();
 
