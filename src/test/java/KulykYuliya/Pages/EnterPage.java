@@ -10,7 +10,7 @@ public class EnterPage extends BasePage {
     }
 
     public WebElement choiseRestaurants() {
-        return findElementByXpath("//a[contains(text(), 'Munch A Lunch')]");
+        return findElementByXpath("//a[contains(text(), 'Great Wall of China')]");
 
     }
 

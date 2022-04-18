@@ -10,10 +10,10 @@ public class RestPage extends BasePage {
     }
 
     public WebElement findDesserts() {
-        return findElementByXpath("//h2[contains(text(), 'Smoothies and Desserts')]");
+        return findElementByXpath("//h2[contains(text(), 'Dessert')]");
     }
 
     public WebElement CheckRest() {
-        return findElementByXpath("//span[contains(text(), 'Coffee Smoothie')]");
+        return findElementByXpath("//span[contains(text(), 'Chocolate Cake')]");
     }
 }

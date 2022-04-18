@@ -11,10 +11,10 @@ public class CheckBtnSingIn extends TestInit {
     public void LogOnEatStreet() {
         HomePage homePage = new HomePage(driver);
         KulykYuliya.Pages.LoginPage loginPage = new KulykYuliya.Pages.LoginPage(driver);
-        homePage.OpenSiteEatStreet();
+        homePage.OpenSiteEatStrt();
         fullscreen();
-        homePage.closeBtnGotIt().click();
-        homePage.getBtnSingIn().click();
+        homePage.clickBtnSingIn().click();
+        homePage.closeBtnGoIt().click();
         loginPage.enterEmailInField().sendKeys("kulykyuliya@gmail.com");
         loginPage.enterPassInField().sendKeys("uehuflf66");
         loginPage.getBtnSingIn().click();

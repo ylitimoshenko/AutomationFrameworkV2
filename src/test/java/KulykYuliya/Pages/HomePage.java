@@ -23,17 +23,31 @@ public class HomePage extends BasePage {
 //            driver.get("https://qa2.eatstreet.com/");
 //        }
 //
-//        public WebElement closeBtnGotIt () {
-//            return findElementByXpath("//button[contains(text(), 'Got it')]");
-//        }
-//
+
 //        public WebElement getBtnSingIn () {
 //            return findElementByXpath("//a[@id='menu-signin']");
 //        }
-//
+
 //        public WebElement IncorrectDataToLogIn () {
 //            return findElementByXpath("//span[@ng-if='signinCtrl.loginInvalid']");
 //
-//        }
+////        }
  }
+
+    public WebElement closeBtnGoIt() {
+        return findElementByXpath("//button[contains(text(), 'Got it')]");
     }
+
+    public WebElement IncorrectDataToLogIn() {
+            return findElementByXpath("//span[@ng-if='signinCtrl.loginInvalid']");
+
+        }
+
+    public void enterAdress() {
+      findElementByXpath("//input[@id='input-food-search']").sendKeys("2021 North Kinney Road");
+    }
+
+    public WebElement clickFed() {
+        return findElementByXpath("//a[contains(text(), 'Get Fed')]");
+    }
+}
