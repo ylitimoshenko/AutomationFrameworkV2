@@ -10,7 +10,7 @@ import tests.TestInit;
 public class FindRestaurantsWithDessertUnArizona extends TestInit {
 
     @Test
-    public void Arizona() {
+    public void findDessertsInArizonaState() {
         HomePage homePage = new HomePage(driver);
         EnterPage enterPage = new EnterPage(driver);
         RestPage restPage = new RestPage(driver);
@@ -18,8 +18,6 @@ public class FindRestaurantsWithDessertUnArizona extends TestInit {
         fullscreen();
         homePage.enterAddress();
         homePage.sleep(3);
-        //homePage.arizona().click();
-        //homePage.clickEnterAddress();
         homePage.clichFed().click();
         enterPage.clickBtnGotIt().click();
         enterPage.choiseRestaurants().click();
