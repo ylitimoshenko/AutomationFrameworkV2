@@ -36,4 +36,8 @@ public class HomePage extends BasePage {
     public WebElement getSignInBtn() {
         return driver.findElement(By.xpath("//a[@id='menu-signin']"));
     }
+
+    public WebElement getAboutUsBtn() {
+        return driver.findElement(By.xpath("//a[text()= 'About Us']"));
+    }
 }

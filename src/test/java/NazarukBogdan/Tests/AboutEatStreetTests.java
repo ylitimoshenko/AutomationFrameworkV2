@@ -1,5 +1,6 @@
 package NazarukBogdan.Tests;
 
+import NazarukBogdan.Pages.AboutUsPage;
 import NazarukBogdan.Pages.HomePage;
 import NazarukBogdan.Pages.SignInPage;
 import org.testng.Assert;
@@ -27,6 +28,19 @@ public class AboutEatStreetTests extends TestInit {
         signInPage.getResetPasswordBtn().click();
 
         Assert.assertTrue(signInPage.getResetWindow().isDisplayed());
+    }
+
+    @Test
+    public void CheckAboutUsInfo() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        fullscreen();
+        homePage.getGotItBtn().click();
+        homePage.getAboutUsBtn().click();
+
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        sleep(2);
+        Assert.assertTrue(aboutUsPage.getAboutUsInfo().isDisplayed());
     }
 }
 
