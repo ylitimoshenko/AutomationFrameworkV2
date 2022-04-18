@@ -1,25 +1,26 @@
 package KovalchukVlad.Tests;
 
+import KovalchukVlad.Pages.AboutUsPage;
 import KovalchukVlad.Pages.HomePage;
 import KovalchukVlad.Pages.LoginPage;
+import KovalchukVlad.Pages.RegPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
-public class CheckButtonSignIn extends TestInit {
-
+public class FiveTestsHomeWork extends TestInit {
     @Test
-    public void EatStreet(){
+    public void aboutUs(){
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
+        RegPage regPage = new RegPage(driver);
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+
         homePage.openSiteEatStreet();
         fullscreen();
-        homePage.getButtonSingIn().click();
         homePage.clickButtonGotIt();
-        loginPage.getEmailInputField().sendKeys("vlad@gmail.com");
-        loginPage.getPasswordInputField().sendKeys("passVlad");
-        loginPage.getButtonSingIn().click();
-        Assert.assertTrue(homePage.IncorrectDataToLogIn().isDisplayed());
-        driver.quit();
+        homePage.clickButtonAboutUs();
+        Assert.assertTrue(aboutUsPage.containsAboutUsInfo());
+        homePage.openSiteEatStreet();
     }
 }

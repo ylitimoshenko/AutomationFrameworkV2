@@ -10,7 +10,7 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public void OpenSiteEatStreet(){
+    public void openSiteEatStreet(){
         driver.get("https://eatstreet.com/");
     }
 
@@ -27,8 +27,8 @@ public class HomePage extends BasePage {
         return findElementByXpath("//span[contains(text(), 'Взуття')]");
     }
 
-    public WebElement clickButtonGotIt() {
-        return findElementByXpath("//button[contains(text(), 'Got it')]");
+    public void clickButtonGotIt() {
+        findElementByXpath("//button[contains(text(), 'Got it')]").click();
     }
 
 
@@ -41,5 +41,17 @@ public class HomePage extends BasePage {
 
     public WebElement CheckMyProfile() {
         return findElementByXpath("//a[contains(text(),'My Account')]");
+    }
+
+    public void clickButtonAboutUs() {
+        findElementByXpath("//a[contains(text(),'About Us')]").click();
+    }
+
+    public void clickButtonForCustomers(){
+        findElementByXpath("//a[contains(text(),'For Customers')]").click();
+    }
+
+    public void clickButtonPrivacyPolicy(){
+        findElementByXpath("//a[contains(text(),'Privacy Policy')]").click();
     }
 }
