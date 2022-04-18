@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
+import java.util.List;
+
 public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {super(driver);}
 
@@ -11,7 +13,7 @@ public class HomePage extends BasePage {
         return driver.findElement(By.xpath("//a[contains(text(), 'Careers')]"));
     }
 
-    public WebElement getGoItBtn() {
+    public WebElement getGotItBtn() {
         return driver.findElement(By.xpath("//button[contains(text(), 'Got it')]"));
     }
 
@@ -21,5 +23,17 @@ public class HomePage extends BasePage {
 
     public WebElement getBlogBtn() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Blog')]"));
+    }
+
+    public List<WebElement> getSearchAbUsBtn() {
+        return driver.findElements(By.xpath("//a[contains(text(), 'About Us')]"));
+    }
+
+    public WebElement getForCustomersBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'For Customers')]"));
+    }
+
+    public WebElement getSignInBtn() {
+        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
     }
 }
