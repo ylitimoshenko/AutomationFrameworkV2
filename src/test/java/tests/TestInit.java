@@ -5,6 +5,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
@@ -27,6 +28,11 @@ public class TestInit {
             driver.manage().window().maximize();
         }
     }
+    @AfterMethod
+     void afterMethod() {
+        driver.quit();
+    }
+
 
     public void sleep(int seconds) {
         try {
