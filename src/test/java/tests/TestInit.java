@@ -13,13 +13,14 @@ public class TestInit {
     ChromeOptions options = new ChromeOptions();
 
     //    put false here if you want to see browser)
-    boolean headless = true;
+    boolean headless = false;
 
 
     @BeforeMethod
     public void setUp() {
         WebDriverManager.chromedriver().setup();
 
+        options.setHeadless(headless);
         driver = new ChromeDriver(options);
         if(headless) {
             driver.manage().window().setSize(new Dimension(1920, 1200));
