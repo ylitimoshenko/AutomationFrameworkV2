@@ -1,7 +1,6 @@
 package NazarukBogdan.Tests;
 
 import NazarukBogdan.Pages.*;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
@@ -11,6 +10,7 @@ public class AboutEatStreetTests extends TestInit {
     public void aboutEatStreer() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
+        fullscreen();
         homePage.getGotItBtn().click();
         homePage.getForCustomersBtn().click();
         Assert.assertTrue(homePage.getSearchAbUsBtn().size() > 0);
@@ -99,7 +99,7 @@ public class AboutEatStreetTests extends TestInit {
     }
 
     @Test
-    public void SearchRestaurantsInSalina(){
+    public void SearchRestaurantsInSalina() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eatstreet.com/");
         fullscreen();
@@ -116,5 +116,17 @@ public class AboutEatStreetTests extends TestInit {
         Assert.assertTrue(searchRestaurantsPage.getNoResstaurants().isDisplayed());
     }
 
+    @Test
+    public void DriveES() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        fullscreen();
+        homePage.getGotItBtn().click();
+        homePage.getBecomeDriver().click();
+
+        DriverCareersPage driverCareersPage = new DriverCareersPage(driver);
+        sleep(3);
+        Assert.assertTrue(driverCareersPage.getMoreInfo().isDisplayed());
+    }
 }
 

@@ -23,14 +23,15 @@ public class TestInit {
 
         options.setHeadless(headless);
         driver = new ChromeDriver(options);
-        if(headless) {
+        if (headless) {
             driver.manage().window().setSize(new Dimension(1920, 1200));
         } else {
             driver.manage().window().maximize();
         }
     }
+
     @AfterMethod
-     void afterMethod() {
+    public void afterMethod() {
         driver.quit();
     }
 
@@ -42,11 +43,12 @@ public class TestInit {
             e.printStackTrace();
         }
     }
-    public void openUrl (String site) {
+
+    public void openUrl(String site) {
         driver.get(site);
     }
 
-    public void fullscreen(){
+    public void fullscreen() {
         driver.manage().window().maximize();
     }
 }
