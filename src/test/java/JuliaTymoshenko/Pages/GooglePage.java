@@ -1,4 +1,4 @@
-package JuliaTymoshenko;
+package JuliaTymoshenko.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,12 +6,11 @@ import pageobject.BasePage;
 
 import java.util.List;
 
-public class HomePage extends BasePage {
+public class GooglePage extends BasePage {
 
-    public HomePage(WebDriver driver) {
+    public GooglePage(WebDriver driver) {
         super(driver);
     }
-
 
     public WebElement enterSentence() {
         return findElementByXpath("//input[@class='gLFyf gsfi']");
@@ -28,8 +27,6 @@ public class HomePage extends BasePage {
     public WebElement pageBrovaryFacebook() {
         return findElementByXpath("//a[contains(text(), 'Говори, не говори, краще місто - Бровари:)')]");
     }
-
-
     public WebElement btnDocymenty() {
         return findElementByXpath("//span[@class='icon icon-docs-icon']");
     }
