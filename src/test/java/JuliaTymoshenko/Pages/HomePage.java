@@ -1,5 +1,4 @@
 package JuliaTymoshenko.Pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -53,5 +52,25 @@ public class HomePage extends BasePage {
 
     public WebElement answerBotLiveChat() {
         return findElementByXpath("//div[contains(text(), 'EatStreet Bot')]");
+    }
+
+    public WebElement getAdressInput() {
+        return findElementByXpath("//input[@ng-model='searchParam']");
+    }
+
+    public WebElement getFedBtn() {
+        return findElementByXpath("//a[@id='find-restaurants']");
+    }
+
+    public WebElement clickSortByIMGBtn() {
+        return findElementByXpath("//button[@class='custom_dropdown_button']/img");
+    }
+
+    public WebElement clickSortByRatingBtn() {
+        return findElementByXpath("//button[contains(text(), 'Rating')]");
+    }
+
+    public WebElement clickSortDeliveryFreeBtn() {
+        return findElementByXpath("//button[contains(text(), 'Delivery Fee')]");
     }
 }
