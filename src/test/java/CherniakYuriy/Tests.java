@@ -54,4 +54,17 @@ public class Tests extends TestInit {
 
         Assert.assertTrue(homePageES.chechURL());
     }
+
+    @Test
+    public void mainPageReturn(){
+        HomePageES homePageES = new HomePageES(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePageES.clickBtnGotIt().click();
+        homePageES.signInBtn().click();
+        homePageES.signUpBtn().click();
+        homePageES.logoBtn().click();
+        sleep(3);
+
+        Assert.assertTrue(homePageES.checkHomePage().isDisplayed());
+    }
 }
