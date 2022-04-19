@@ -71,4 +71,8 @@ public class HomePage extends BasePage {
     public WebElement getAsianFoodBtn() {
         return driver.findElement(By.xpath("//button[text()= 'View all Asian Food options']"));
     }
+
+    public WebElement getBecomeDriver() {
+        return driver.findElement(By.xpath("//a[text()= 'Become a Driver!']"));
+    }
 }
