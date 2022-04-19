@@ -31,4 +31,17 @@ public class Tests extends TestInit {
 
         Assert.assertTrue(homePageES.availabilityHeadquarters().isDisplayed());
     }
+
+    @Test
+    public void checkLiveChat(){
+        HomePageES homePageES = new HomePageES(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePageES.clickBtnGotIt().click();
+        sleep(3);
+        homePageES.getLiveChatBtn().click();
+        homePageES.goToTheSecondWindowTab(driver,10);
+        sleep(6);
+
+        Assert.assertTrue(homePageES.getEndChat().isDisplayed());
+    }
 }
