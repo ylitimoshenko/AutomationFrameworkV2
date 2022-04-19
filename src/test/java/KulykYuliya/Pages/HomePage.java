@@ -58,4 +58,12 @@ public class HomePage extends BasePage {
     public WebElement clickBtnGetFed() {
         return findElementByXpath("//a[@id='find-restaurants']");
     }
+
+    public WebElement clickBtnDelivery() {
+        return findElementByXpath("//label[contains(text(), 'Delivery')]");
+    }
+
+    public WebElement checkBtnDelivery() {
+        return findElementByXpath("//div[contains(text(), 'We')]");
+    }
 }

@@ -45,7 +45,19 @@ public class TasksForGira extends TestInit {
         Assert.assertTrue(restPage.checkEnterAddress().isDisplayed());
 
     }
-}
+
+    @Test
+    public void ChoiceOptionDelivery() {
+        HomePage homePage = new HomePage(driver);
+        homePage.OpenSiteEatStrt();
+        fullscreen();
+        homePage.clickBtnDelivery().click();
+        Assert.assertTrue(homePage.checkBtnDelivery().isDisplayed());
+        driver.quit();
+
+    }
+
+    }
 
 
 
