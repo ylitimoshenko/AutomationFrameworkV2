@@ -25,4 +25,16 @@ public class HomePageES extends BasePage {
     public WebElement clickGetFedBtn() {
         return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
     }
+
+    public WebElement clickBtnGotIt() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'Got it')]"));
+    }
+
+    public WebElement clickBtnAboutUs() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'About Us')]"));
+    }
+
+    public WebElement availabilityHeadquarters() {
+        return driver.findElement(By.xpath("//h2[contains(text(), 'Headquarters')]"));
+    }
 }

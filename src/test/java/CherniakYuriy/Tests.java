@@ -20,4 +20,15 @@ public class Tests extends TestInit {
 
         Assert.assertTrue(restoransPageES.checkResult().isDisplayed());
     }
+
+    @Test
+    public void checkHeadquarters(){
+        HomePageES homePageES = new HomePageES(driver);
+        openUrl("https://eatstreet.com");
+        homePageES.clickBtnGotIt().click();
+        homePageES.clickBtnAboutUs().click();
+        sleep(2);
+
+        Assert.assertTrue(homePageES.availabilityHeadquarters().isDisplayed());
+    }
 }
