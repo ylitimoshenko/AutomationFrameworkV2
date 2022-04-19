@@ -1,4 +1,4 @@
-package KulykYuliya;
+package KulykYuliya.Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FifthTestForGit1 {
+public class FifthTestForGit{
     @Test
     public void FourthTestGorGit() {
         WebDriverManager.chromedriver().setup();
@@ -20,3 +20,4 @@ public class FifthTestForGit1 {
 
     }
 }
+
