@@ -22,6 +22,16 @@ public class TasksForGira extends TestInit {
         loginPage.checkBtnSingIn().click();
         Assert.assertTrue(loginPage.checkSing().isDisplayed());
     }
+
+    @Test
+    public void usedBtnGetFed() {
+        HomePage homePage = new HomePage(driver);
+        homePage.OpenSiteEatStrt();
+        fullscreen();
+        homePage.clickBtnGetFed().click();
+        Assert.assertTrue(homePage.checkBtnGetFed().isDisplayed());
+        driver.quit();
+    }
 }
 
 
