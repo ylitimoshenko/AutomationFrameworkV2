@@ -61,4 +61,12 @@ public class HomePageES extends BasePage {
     public WebElement getEndChat() {
         return driver.findElement(By.xpath("//button[contains(text(), 'End Chat')]"));
     }
+
+    public WebElement getPhoenixLink() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Phoenix, AZ')]"));
+    }
+
+    public boolean chechURL() {
+        return driver.getCurrentUrl().contains("/phoenix-az/home");
+    }
 }

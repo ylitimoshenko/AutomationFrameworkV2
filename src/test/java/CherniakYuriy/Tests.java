@@ -44,4 +44,14 @@ public class Tests extends TestInit {
 
         Assert.assertTrue(homePageES.getEndChat().isDisplayed());
     }
+
+    @Test
+    public void checkPhoenixLink(){
+        HomePageES homePageES = new HomePageES(driver);
+        openUrl("https://qa2.eatstreet.com/");
+        homePageES.clickBtnGotIt().click();
+        homePageES.getPhoenixLink().click();
+
+        Assert.assertTrue(homePageES.chechURL());
+    }
 }
