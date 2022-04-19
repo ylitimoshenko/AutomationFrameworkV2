@@ -13,8 +13,9 @@ public class AboutEatStreetTests extends TestInit {
         openUrl("https://eatstreet.com/");
         homePage.getGotItBtn().click();
         homePage.getForCustomersBtn().click();
-        Assert.assertTrue(homePage.getSearchAbUsBtn().size()>0);
-        }
+        Assert.assertTrue(homePage.getSearchAbUsBtn().size() > 0);
+    }
+
     @Test
     public void CheckResetPassword() {
         HomePage homePage = new HomePage(driver);
@@ -62,6 +63,7 @@ public class AboutEatStreetTests extends TestInit {
         Assert.assertTrue(signUpPage.getErrorMSG().isDisplayed());
 
     }
+
     @Test
     public void SearchRestaurantInBoston() {
         HomePage homePage = new HomePage(driver);
@@ -77,6 +79,7 @@ public class AboutEatStreetTests extends TestInit {
         Assert.assertTrue(homePage.getBostonRestaurants().isDisplayed());
 
     }
+
     @Test
     public void SearchRestaurantsInNYC() {
         HomePage homePage = new HomePage(driver);
@@ -94,5 +97,24 @@ public class AboutEatStreetTests extends TestInit {
         SearchRestaurantsPage searchRestaurantsPage = new SearchRestaurantsPage(driver);
         Assert.assertTrue(searchRestaurantsPage.getRestaurantsInNYC().isDisplayed());
     }
+
+    @Test
+    public void SearchRestaurantsInSalina(){
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        fullscreen();
+        homePage.getGotItBtn().click();
+        homePage.getSalinaBtn().click();
+        sleep(2);
+        homePage.getAsianFoodBtn().click();
+
+        SearchRestaurantsPage searchRestaurantsPage = new SearchRestaurantsPage(driver);
+        sleep(2);
+        searchRestaurantsPage.getTakeOutBtn().click();
+        sleep(2);
+
+        Assert.assertTrue(searchRestaurantsPage.getNoResstaurants().isDisplayed());
+    }
+
 }
 

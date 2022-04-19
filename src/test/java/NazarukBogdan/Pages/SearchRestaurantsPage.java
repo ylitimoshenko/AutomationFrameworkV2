@@ -13,4 +13,12 @@ public class SearchRestaurantsPage extends BasePage {
     public WebElement getRestaurantsInNYC() {
         return driver.findElement(By.xpath("//h1[contains(text(), 'New York City Restaurants')]"));
     }
+
+    public WebElement getTakeOutBtn() {
+        return driver.findElement(By.xpath("//input[@id='filters-checkbox-takeout']"));
+    }
+
+    public WebElement getNoResstaurants() {
+        return driver.findElement(By.xpath("//p[text()= 'No available restaurants']"));
+    }
 }

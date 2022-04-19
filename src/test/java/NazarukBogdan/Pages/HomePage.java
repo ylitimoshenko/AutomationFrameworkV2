@@ -1,4 +1,5 @@
 package NazarukBogdan.Pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +8,9 @@ import pageobject.BasePage;
 import java.util.List;
 
 public class HomePage extends BasePage {
-    public HomePage(WebDriver driver) {super(driver);}
+    public HomePage(WebDriver driver) {
+        super(driver);
+    }
 
     public WebElement getCareersBtn() {
         return driver.findElement(By.xpath("//a[contains(text(), 'Careers')]"));
@@ -59,5 +62,13 @@ public class HomePage extends BasePage {
 
     public WebElement getBostonRestaurants() {
         return driver.findElement(By.xpath("//h1[text()= 'Boston Restaurants That Deliver & Takeout']"));
+    }
+
+    public WebElement getSalinaBtn() {
+        return driver.findElement(By.xpath("//a[text()= 'Salina']"));
+    }
+
+    public WebElement getAsianFoodBtn() {
+        return driver.findElement(By.xpath("//button[text()= 'View all Asian Food options']"));
     }
 }
