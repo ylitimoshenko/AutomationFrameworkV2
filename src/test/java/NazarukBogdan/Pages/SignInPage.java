@@ -10,12 +10,15 @@ public class SignInPage extends BasePage {
         super(driver);
     }
 
-
     public WebElement getResetPasswordBtn() {
         return driver.findElement(By.xpath("//span[@id='forgot-password']"));
     }
 
     public WebElement getResetWindow() {
         return driver.findElement(By.xpath("//div[text()= 'Reset your password']"));
+    }
+
+    public WebElement getSignUpPageBtn() {
+        return driver.findElement(By.xpath("//a[text()= 'Sign Up']"));
     }
 }
