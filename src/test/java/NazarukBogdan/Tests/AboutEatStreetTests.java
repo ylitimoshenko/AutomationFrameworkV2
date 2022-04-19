@@ -1,9 +1,6 @@
 package NazarukBogdan.Tests;
 
-import NazarukBogdan.Pages.AboutUsPage;
-import NazarukBogdan.Pages.HomePage;
-import NazarukBogdan.Pages.SignInPage;
-import NazarukBogdan.Pages.SignUpPage;
+import NazarukBogdan.Pages.*;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -79,6 +76,23 @@ public class AboutEatStreetTests extends TestInit {
         sleep(4);
         Assert.assertTrue(homePage.getBostonRestaurants().isDisplayed());
 
+    }
+    @Test
+    public void SearchRestaurantsInNYC() {
+        HomePage homePage = new HomePage(driver);
+        openUrl("https://eatstreet.com/");
+        fullscreen();
+        homePage.getGotItBtn().click();
+        homePage.getAboutUsBtn().click();
+        sleep(2);
+
+        AboutUsPage aboutUsPage = new AboutUsPage(driver);
+        aboutUsPage.getTypeFood().sendKeys("fast food");
+        aboutUsPage.getAdress().sendKeys("NYC\n");
+        sleep(2);
+
+        SearchRestaurantsPage searchRestaurantsPage = new SearchRestaurantsPage(driver);
+        Assert.assertTrue(searchRestaurantsPage.getRestaurantsInNYC().isDisplayed());
     }
 }
 
