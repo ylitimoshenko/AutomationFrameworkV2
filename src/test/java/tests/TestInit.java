@@ -29,7 +29,7 @@ public class TestInit {
         }
     }
     @AfterMethod
-    public void afterMethod() {
+     void afterMethod() {
         driver.quit();
     }
 

@@ -24,9 +24,5 @@ public class FindRestaurantsWithDessertUnArizona extends TestInit {
         restPage.findDesserts();
         Assert.assertTrue(restPage.CheckRest().isDisplayed());
         driver.quit();
-
-
-        //enterPage.enterNameState.
-
     }
 }
