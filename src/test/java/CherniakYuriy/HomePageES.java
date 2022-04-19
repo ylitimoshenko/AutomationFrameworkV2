@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
+import java.util.ArrayList;
+
 public class HomePageES extends BasePage {
     public HomePageES(WebDriver driver) {
         super(driver);
@@ -36,5 +38,27 @@ public class HomePageES extends BasePage {
 
     public WebElement availabilityHeadquarters() {
         return driver.findElement(By.xpath("//h2[contains(text(), 'Headquarters')]"));
+    }
+
+    public WebElement getLiveChatBtn() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'Live Chat')]"));
+    }
+
+    public void goToTheSecondWindowTab(WebDriver driver, Integer seconds) {
+        waitForNewTabOpened(seconds);
+        ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    }
+    public void waitForNewTabOpened(Integer seconds) {
+        for (int a = 0; a < seconds * 2; a++) {
+            ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
+            if (tabs2.size() > 1) {
+                break;
+            }
+        }
+    }
+
+    public WebElement getEndChat() {
+        return driver.findElement(By.xpath("//button[contains(text(), 'End Chat')]"));
     }
 }
