@@ -7,6 +7,10 @@ import pageobject.BasePage;
 public class HomePage extends BasePage {
 
 
+    public WebElement checkBtnGetFed() {
+        return findElementByXpath("//div[contains(text(), 'Tell')]");
+    };
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -49,5 +53,9 @@ public class HomePage extends BasePage {
 
     public WebElement clickFed() {
         return findElementByXpath("//a[contains(text(), 'Get Fed')]");
+    }
+
+    public WebElement clickBtnGetFed() {
+        return findElementByXpath("//a[@id='find-restaurants']");
     }
 }

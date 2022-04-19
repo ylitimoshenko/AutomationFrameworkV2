@@ -16,4 +16,8 @@ public class RestPage extends BasePage {
     public WebElement CheckRest() {
         return findElementByXpath("//span[contains(text(), 'Chocolate Cake')]");
     }
+
+    public WebElement checkEnterAddress() {
+        return findElementByXpath("//h1[contains(text(), 'Tucson')]");
+    }
 }
