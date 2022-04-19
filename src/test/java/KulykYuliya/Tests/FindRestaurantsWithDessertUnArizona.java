@@ -23,6 +23,17 @@ public class FindRestaurantsWithDessertUnArizona extends TestInit {
         enterPage.choiseRestaurants().click();
         restPage.findDesserts();
         Assert.assertTrue(restPage.CheckRest().isDisplayed());
-        driver.quit();
     }
+        @Test
+    public void enterYourAddress() {
+        HomePage homePage = new HomePage(driver);
+        RestPage restPage = new RestPage(driver);
+        homePage.OpenSiteEatStrt();
+        fullscreen();
+        homePage.enterAdress();
+        sleep(3);
+        homePage.clickBtnGetFed().click();
+        Assert.assertTrue(restPage.checkEnterAddress().isDisplayed());
+
+}
 }
