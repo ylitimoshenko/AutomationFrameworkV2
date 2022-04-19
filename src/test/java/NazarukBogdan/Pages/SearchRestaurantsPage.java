@@ -21,4 +21,12 @@ public class SearchRestaurantsPage extends BasePage {
     public WebElement getNoResstaurants() {
         return driver.findElement(By.xpath("//p[text()= 'No available restaurants']"));
     }
+
+    public WebElement getCakeNYC() {
+        return driver.findElement(By.xpath("//h1[contains(text(), 'New York City Restaurants')]"));
+    }
+
+    public WebElement getDessertCategory() {
+        return driver.findElement(By.xpath("//label[contains(text(), 'Dessert ')]"));
+    }
 }

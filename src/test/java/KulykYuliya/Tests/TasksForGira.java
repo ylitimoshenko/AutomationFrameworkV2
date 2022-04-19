@@ -57,11 +57,12 @@ public class TasksForGira extends TestInit {
 
     }
 
+    @Test
+    public void selectTheCityInTheSite() {
+        HomePage homePage = new HomePage(driver);
+        homePage.OpenSiteEatStrt();
+        fullscreen();
+        homePage.enterNewYork();
+        Assert.assertTrue(homePage.checkEnterNY().isDisplayed());
     }
-
-
-
-
-
-
-
+}
