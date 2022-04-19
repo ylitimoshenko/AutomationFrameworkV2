@@ -11,9 +11,7 @@ public class EnterPage extends BasePage {
 
     public WebElement choiseRestaurants() {
         return findElementByXpath("//a[contains(text(), 'Great Wall of China')]");
-
     }
-
     public WebElement clickBtnGotIt() {
         return findElementByXpath("//button[contains(text(), 'Got it')]");
     }
