@@ -61,4 +61,28 @@ public class HomePageES extends BasePage {
     public WebElement getEndChat() {
         return driver.findElement(By.xpath("//button[contains(text(), 'End Chat')]"));
     }
+
+    public WebElement getPhoenixLink() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Phoenix, AZ')]"));
+    }
+
+    public boolean chechURL() {
+        return driver.getCurrentUrl().contains("/phoenix-az/home");
+    }
+
+    public WebElement signInBtn() {
+        return driver.findElement(By.xpath("//a[@id='menu-signin']"));
+    }
+
+    public WebElement signUpBtn() {
+        return driver.findElement(By.xpath("//a[contains(text(), 'Sign Up')]"));
+    }
+
+    public WebElement logoBtn() {
+        return driver.findElement(By.xpath("//img[@class='logo-alternate']"));
+    }
+
+    public WebElement checkHomePage() {
+        return driver.findElement(By.xpath("//div[@class='landing-callout']"));
+    }
 }

@@ -33,4 +33,8 @@ public class EatstreetPageSignIn extends BasePage {
     public WebElement getErrorMSG() {
         return driver.findElement(By.xpath("//span[contains(text(), 'is incorrect.')]"));
     }
+
+    public WebElement getLogo() {
+        return driver.findElement(By.xpath("//img[@class='logo-alternate']"));
+    }
 }
