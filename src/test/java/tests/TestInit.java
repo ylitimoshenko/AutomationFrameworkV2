@@ -1,10 +1,14 @@
 package tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -50,5 +54,17 @@ public class TestInit {
 
     public void fullscreen() {
         driver.manage().window().maximize();
+    }
+
+    int BASIC_TIME = 15;
+
+    public void waitTILLELelementContainsText(String locator, String text) {
+        WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(locator), text));
+    }
+
+    public WebElement getElementByXpath(String locator) {
+        WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
+        return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 }
