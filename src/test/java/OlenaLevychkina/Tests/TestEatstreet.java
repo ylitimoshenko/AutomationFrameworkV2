@@ -2,7 +2,6 @@ package OlenaLevychkina.Tests;
 
 import DubrovskiyVlad.HomePage;
 import OlenaLevychkina.Web.EatstreetPageSignIn;
-import OlenaLevychkina.Web.RestPageElements;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,6 +19,7 @@ public class TestEatstreet extends TestInit {
         sleep(2);
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
     }
+
     @Test
     public void searchMadison() {
         driver.get("https://qa2.eatstreet.com");
@@ -30,6 +30,7 @@ public class TestEatstreet extends TestInit {
 
         Assert.assertTrue((driver.findElement(By.xpath("//h1")).getText().contains("Madison")));
     }
+
     @Test
     public void checkTextRestaurantLosAngeles() {
         HomePage homePage = new HomePage(driver);
@@ -51,4 +52,5 @@ public class TestEatstreet extends TestInit {
 
         Assert.assertTrue(getElementByXpath("//h1").getText().contains("Los Angeles Restaurants That Deliver & Takeout"));
     }
+
 }

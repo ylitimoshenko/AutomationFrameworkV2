@@ -31,13 +31,6 @@ public class RestPageElements extends BasePage {
         driver.findElement(By.xpath("//input[@placeholder='Search Menu']")).sendKeys("Fried Calamari");
         return null;
     }
-
-    public WebElement searchOmelettes() {
-        return driver.findElement(By.xpath("//h2[contains(text(), 'Omelettes')]"));
-    }
-
-    public WebElement CheckSearchMenu() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'Bel Air Omelette')]"));
-    }
 }
+
 
