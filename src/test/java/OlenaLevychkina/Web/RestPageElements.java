@@ -10,6 +10,7 @@ public class RestPageElements extends BasePage {
         super(driver);
 
     }
+
     public void searchNameInput() {
         driver.findElement(By.xpath("//input[@id='input-food-search']")).sendKeys("New York");
     }
@@ -18,11 +19,12 @@ public class RestPageElements extends BasePage {
         return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
     }
 
-    public WebElement searchOmelettes()  {
+    public WebElement searchOmelettes() {
         return driver.findElement(By.xpath("//h2[contains(text(), 'Omelettes')]"));
     }
 
-    public WebElement CheckSearchMenu() {return driver.findElement(By.xpath("//span[contains(text(), 'Bel Air Omelette')]"));
+    public WebElement CheckSearchMenu() {
+        return driver.findElement(By.xpath("//span[contains(text(), 'Bel Air Omelette')]"));
     }
 }
 
