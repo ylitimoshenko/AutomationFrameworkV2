@@ -29,7 +29,7 @@ public abstract class BasePage {
     }
 
     public WebElement findElementByXpath(String locator) {
-        return waitElementToBeClickable(locator);
+        return driver.findElement(By.xpath(locator));
     }
 
     //    public WebElement findElement(String locator){ return driver.findElement (By.xpath (locator));}
