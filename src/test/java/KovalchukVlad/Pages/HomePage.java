@@ -18,11 +18,6 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a[@id='menu-signin']");
     }
 
-    public LoginPage clickSignInBtn(){
-        getButtonSingIn().click();
-        return new LoginPage(driver);
-    }
-
     public WebElement clickShoesButton() {
         return findElementByXpath("//span[contains(text(), 'Взуття')]");
     }

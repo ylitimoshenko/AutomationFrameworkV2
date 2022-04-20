@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
 public class RestPageElements extends BasePage {
+
     public RestPageElements(WebDriver driver) {
         super(driver);
-
     }
 
     public void searchNameInput() {
@@ -19,12 +19,18 @@ public class RestPageElements extends BasePage {
         return driver.findElement(By.xpath("//a[@id='find-restaurants']"));
     }
 
-    public WebElement searchOmelettes() {
-        return driver.findElement(By.xpath("//h2[contains(text(), 'Omelettes')]"));
+    public void searchRestNameInput() {
+        driver.findElement(By.xpath("//a[@id='find-restaurants']")).sendKeys("Modern Slice");
     }
 
-    public WebElement CheckSearchMenu() {
-        return driver.findElement(By.xpath("//span[contains(text(), 'Bel Air Omelette')]"));
+    public WebElement searchAttempt() {
+        return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
+    }
+
+    public WebElement searchAppetizers() {
+        driver.findElement(By.xpath("//input[@placeholder='Search Menu']")).sendKeys("Fried Calamari");
+        return null;
     }
 }
+
 
