@@ -14,7 +14,7 @@ public class CheckButtonSingUp extends TestInit {
         HomePage homePage = new HomePage(driver);
         RegPage regPage = new RegPage(driver);
         LoginPage loginPage = new LoginPage(driver);
-        homePage.OpenSiteEatStreet();
+        homePage.openSiteEatStreet();
         fullscreen();
         homePage.getButtonSingIn().click();
         loginPage.clickButtonGotItCookies();
