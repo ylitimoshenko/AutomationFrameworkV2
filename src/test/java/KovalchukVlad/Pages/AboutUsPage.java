@@ -9,11 +9,11 @@ public class AboutUsPage extends BasePage {
         super(driver);
     }
 
-public void clickButtonLeadership(){
+    public void clickButtonLeadership() {
         findElementByXpath("//button[contains(text(), 'Leadership')]").click();
     }
 
-public WebElement searchAssertAboutUsText(){
-      return   findElementByXpath("//h4[contains(text(),'Matt Howard')]");
+    public WebElement searchAssertAboutUsText() {
+        return findElementByXpath("//h4[contains(text(),'Matt Howard')]");
     }
 }
