@@ -12,10 +12,10 @@ public class CheckButtonSignIn extends TestInit {
     public void EatStreet(){
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
-        homePage.OpenSiteEatStreet();
+        homePage.openSiteEatStreet();
         fullscreen();
         homePage.getButtonSingIn().click();
-        homePage.clickButtonGotIt().click();
+        homePage.clickButtonGotIt();
         loginPage.getEmailInputField().sendKeys("vlad@gmail.com");
         loginPage.getPasswordInputField().sendKeys("passVlad");
         loginPage.getButtonSingIn().click();
