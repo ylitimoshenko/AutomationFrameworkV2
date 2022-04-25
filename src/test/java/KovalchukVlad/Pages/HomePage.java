@@ -10,7 +10,7 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public void OpenSiteEatStreet(){
+    public void  OpenSiteEatStreet(){
         driver.get("https://eatstreet.com/");
     }
 

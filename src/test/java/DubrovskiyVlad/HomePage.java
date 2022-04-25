@@ -39,3 +39,4 @@ public class HomePage extends BasePage {
         return findElementByXpath("//span[contains(text(), 'The login information you entered is incorrect.')]");
     }
 }
+
