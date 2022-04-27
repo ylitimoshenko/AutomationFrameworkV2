@@ -47,5 +47,18 @@ public class HomePage extends BasePage {
     public WebElement checkAndClosePopUpWindow() {
         return driver.findElement(By.xpath("//a[@id='enter-address-btn']"));
     }
+
+    public void openSiteEatstreet() {
+        driver.get("https://eatstreet.com/");
+    }
+
+    public WebElement getBtnSingIn() {
+        return findElementByXpath("//a[@id='menu-signin']");
+    }
+
+    public WebElement CheckMyProfile() {
+      return   findElementByXpath("//a[contains(text(), 'My Account')]");
+
+    }
 }
 
