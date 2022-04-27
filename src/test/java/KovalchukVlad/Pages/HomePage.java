@@ -71,4 +71,8 @@ public class HomePage extends BasePage {
     public void clickBtnDownloadOnTheAppStore(){
         findElementByXpath("//a[@class='app-btn-iphone']").click();
     }
+
+    public void clickBtnGetItOnGooglePlay() {
+        findElementByXpath("//a[@class='app-btn-android']").click();
+    }
 }
