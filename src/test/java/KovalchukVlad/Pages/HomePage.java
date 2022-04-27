@@ -9,9 +9,9 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-  
-     public void openSiteEatStreet(){
-       driver.get("https://eatstreet.com/");
+
+    public void openSiteEatStreet() {
+        driver.get("https://eatstreet.com/");
     }
 
     public WebElement getButtonSingIn() {
@@ -27,8 +27,6 @@ public class HomePage extends BasePage {
     }
 
 
-
-
     public WebElement IncorrectDataToLogIn() {
         return findElementByXpath("//span[contains(text(), 'incorrect')]");
     }
@@ -38,18 +36,19 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a[contains(text(),'My Account')]");
     }
 
-    public void goToHomePage(){
+    public void goToHomePage() {
         findElementByXpath("//img[@class='logo-alternate']").click();
     }
 
-    public void clickButtonAboutUs(){
+    public void clickButtonAboutUs() {
         findElementByXpath("//a[contains(text(), 'About Us')]").click();
     }
 
     public void clickButtonContactUs() {
         findElementByXpath("//a[contains(text(), 'Contact Us')]").click();
     }
-    public void clickButtonForCustomers(){
+
+    public void clickButtonForCustomers() {
         findElementByXpath("//a[contains(text(), 'For Customers')]").click();
     }
 
@@ -61,10 +60,15 @@ public class HomePage extends BasePage {
         findElementByXpath("//a[contains(text(), 'Careers')]").click();
     }
 
-    public void clickButtonCart(){
+    public void clickButtonCart() {
         findElementByXpath("//a[contains(text(), 'Cart ')]").click();
     }
-    public WebElement searchTextCartEmpty(){
+
+    public WebElement searchTextCartEmpty() {
         return findElementByXpath("//a[contains(text(), 'Your Cart is Empty')]");
+    }
+
+    public void clickBtnDownloadOnTheAppStore(){
+        findElementByXpath("//a[@class='app-btn-iphone']").click();
     }
 }
