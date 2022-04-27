@@ -1,6 +1,6 @@
-package DubrovskiyVlad.TestJira;
+package DubrovskiyVlad.Tests;
 
-import DubrovskiyVlad.HomePage;
+import DubrovskiyVlad.Pages.HomePage;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
