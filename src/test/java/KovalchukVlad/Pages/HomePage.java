@@ -60,4 +60,11 @@ public class HomePage extends BasePage {
     public void clickButtonCareers() {
         findElementByXpath("//a[contains(text(), 'Careers')]").click();
     }
+
+    public void clickButtonCart(){
+        findElementByXpath("//a[contains(text(), 'Cart ')]").click();
+    }
+    public WebElement searchTextCartEmpty(){
+        return findElementByXpath("//a[contains(text(), 'Your Cart is Empty')]");
+    }
 }
