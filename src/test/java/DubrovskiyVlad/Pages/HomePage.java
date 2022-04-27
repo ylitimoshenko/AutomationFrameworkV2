@@ -80,6 +80,14 @@ public class HomePage extends BasePage {
     public void clickButtonApi() {
         findElementByXpath("//a[contains(text(), 'API')]").click();
     }
+
+    public void clickPartnerWithUs() {
+        findElementByXpath("//a[contains(text(), 'Partner with us')]").click();
+    }
+
+    public WebElement CheckPartnerwithUs() {
+        return findElementByXpath("//h1[contains(text(), 'EatStreet is the Smartest Way to Order Food Online')]");
+    }
 }
 
 
