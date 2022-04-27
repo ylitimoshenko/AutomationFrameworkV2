@@ -9,9 +9,9 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-
-    public void openSiteEatStreet(){
-        driver.get("https://eatstreet.com/");
+  
+     public void openSiteEatStreet(){
+       driver.get("https://eatstreet.com/");
     }
 
     public WebElement getButtonSingIn() {
