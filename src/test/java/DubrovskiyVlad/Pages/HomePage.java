@@ -57,7 +57,7 @@ public class HomePage extends BasePage {
     }
 
     public WebElement CheckMyProfile() {
-      return   findElementByXpath("//a[contains(text(), 'My Account')]");
+        return findElementByXpath("//a[contains(text(), 'My Account')]");
 
     }
 
@@ -73,8 +73,13 @@ public class HomePage extends BasePage {
         findElementByXpath("//a[@id='find-restaurants']").click();
     }
 
-    public void closeLocation(){
+    public void closeLocation() {
         findElementByXpath("//a[@id='enter-address-btn']").click();
     }
+
+    public void clickButtonApi() {
+        findElementByXpath("//a[contains(text(), 'API')]").click();
+    }
 }
+
 
