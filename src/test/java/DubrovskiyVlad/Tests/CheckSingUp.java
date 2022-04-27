@@ -1,6 +1,8 @@
-package DubrovskiyVlad.TestJira;
+package DubrovskiyVlad.Tests;
 
-import DubrovskiyVlad.HomePage;
+import DubrovskiyVlad.Pages.HomePage;
+import DubrovskiyVlad.Pages.LoginPage;
+import DubrovskiyVlad.Pages.RegPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;

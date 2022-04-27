@@ -1,4 +1,4 @@
-package DubrovskiyVlad;
+package DubrovskiyVlad.Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -59,6 +59,22 @@ public class HomePage extends BasePage {
     public WebElement CheckMyProfile() {
       return   findElementByXpath("//a[contains(text(), 'My Account')]");
 
+    }
+
+    public void clickTakeOut() {
+        findElementByXpath("//label[contains(text(), 'Takeout')]").click();
+    }
+
+    public void writeYouAdress() {
+        findElementByXpath("//input[@id='input-food-search']").sendKeys("Los Angeles, Калифорния, США");
+    }
+
+    public void GetFedClick() {
+        findElementByXpath("//a[@id='find-restaurants']").click();
+    }
+
+    public void closeLocation(){
+        findElementByXpath("//a[@id='enter-address-btn']").click();
     }
 }
 
