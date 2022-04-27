@@ -87,6 +87,11 @@ public class HomePage extends BasePage {
 
     public WebElement CheckPartnerwithUs() {
         return findElementByXpath("//h1[contains(text(), 'EatStreet is the Smartest Way to Order Food Online')]");
+
+    }
+
+    public void clickContctUs() {
+        findElementByXpath("//a[contains(text(), 'Contact Us')]").click();
     }
 }
 
