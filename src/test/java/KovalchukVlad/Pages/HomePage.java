@@ -45,4 +45,8 @@ public class HomePage extends BasePage {
     public void clickButtonAboutUs(){
         findElementByXpath("//a[contains(text(), 'About Us')]").click();
     }
+
+    public void clickButtonContactUs() {
+        findElementByXpath("//a[contains(text(), 'Contact Us')]").click();
+    }
 }
