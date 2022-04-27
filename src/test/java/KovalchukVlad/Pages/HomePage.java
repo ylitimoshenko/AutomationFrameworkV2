@@ -52,4 +52,8 @@ public class HomePage extends BasePage {
     public void clickButtonForCustomers(){
         findElementByXpath("//a[contains(text(), 'For Customers')]").click();
     }
+
+    public void clickButtonApi() {
+        findElementByXpath("//a[contains(text(), 'API')]").click();
+    }
 }
