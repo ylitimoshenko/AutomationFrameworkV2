@@ -97,6 +97,10 @@ public class HomePage extends BasePage {
     public void clickBtnBlog() {
         findElementByXpath("//a[contains(text(), 'Blog')]").click();
     }
+
+    public void clickBtnAboutUs() {
+        findElementByXpath("//a[contains(text(), 'About Us')]").click();
+    }
 }
 
 
