@@ -10,7 +10,7 @@ public class battleNetTests extends TestInit {
     public void battleNetShop() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eu.shop.battle.net/en-gb");
-        sleep(1);
+        sleep(3);
         homePage.checkWarcraftIII().click();
         sleep(1);
         homePage.wrctReforgedIcon().click();
