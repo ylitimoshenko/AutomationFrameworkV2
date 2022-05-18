@@ -10,31 +10,11 @@ public class battleNetTests extends TestInit {
     public void battleNetShop() {
         HomePage homePage = new HomePage(driver);
         openUrl("https://eu.shop.battle.net/en-gb");
-        sleep(3);
-        homePage.checkWorldOfWarcraftGame().click();
-        driver.navigate().back();
-        sleep(5);
-        homePage.checkWorldOfWarcraftClassicGame().click();
-        driver.navigate().back();
-        sleep(3);
-        homePage.checkHearthstoneGame().click();
-        driver.navigate().back();
-        sleep(3);
-        homePage.checkOverwatchGame().click();
-        driver.navigate().back();
-        sleep(3);
-        homePage.checkDiabloImmortalGame().click();
-        driver.navigate().back();
-        sleep(3);
-        homePage.checkDiabloIIResurrectedGame().click();
-        driver.navigate().back();
-        sleep(3);
-        homePage.checkDiabloIIIGame().click();
-        driver.navigate().back();
+        sleep(1);
         homePage.checkWarcraftIII().click();
-        sleep(3);
+        sleep(1);
         homePage.wrctReforgedIcon().click();
-        sleep(3);
+        sleep(1);
 
         Assert.assertTrue(homePage.buyNowReforgedIIIButton().isDisplayed());
     }
