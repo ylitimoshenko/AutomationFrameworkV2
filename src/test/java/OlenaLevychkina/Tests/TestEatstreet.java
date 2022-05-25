@@ -1,5 +1,6 @@
 package OlenaLevychkina.Tests;
 
+import DubrovskiyVlad.Pages.HomePage;
 import OlenaLevychkina.Web.EatstreetPageSignIn;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -18,6 +19,7 @@ public class TestEatstreet extends TestInit {
         sleep(2);
         Assert.assertTrue(signInPage.getErrorMSG().isDisplayed());
     }
+
     @Test
     public void searchMadison() {
         driver.get("https://qa2.eatstreet.com");
@@ -28,4 +30,27 @@ public class TestEatstreet extends TestInit {
 
         Assert.assertTrue((driver.findElement(By.xpath("//h1")).getText().contains("Madison")));
     }
+
+    @Test
+    public void checkTextRestaurantLosAngeles() {
+        HomePage homePage = new HomePage(driver);
+        EatstreetPageSignIn signInPage = new EatstreetPageSignIn(driver);
+        signInPage.navigate();
+        homePage.clickButtonSignIn().click();
+        signInPage.closeModal();
+        signInPage.getEmailField().sendKeys("x-o-m@ukr.net");
+        signInPage.getPassword().sendKeys("qwer4152sj");
+        signInPage.getLoginBtn().click();
+        signInPage.getLogo().click();
+        sleep(3);
+        homePage.getAddressField().sendKeys("Los Angeles");
+        homePage.getFedBtn().click();
+        homePage.checkAndClosePopUpWindow().click();
+        homePage.getFedBtn().click();
+
+        waitTILLELelementContainsText("//h1", "Los Angeles Restaurants That Deliver & Takeout");
+
+        Assert.assertTrue(getElementByXpath("//h1").getText().contains("Los Angeles Restaurants That Deliver & Takeout"));
+    }
+
 }

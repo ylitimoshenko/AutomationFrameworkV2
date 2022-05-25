@@ -10,7 +10,7 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public void OpenSiteEatStreet(){
+    public void openSiteEatStreet() {
         driver.get("https://eatstreet.com/");
     }
 
@@ -18,20 +18,13 @@ public class HomePage extends BasePage {
         return findElementByXpath("//a[@id='menu-signin']");
     }
 
-    public LoginPage clickSignInBtn(){
-        getButtonSingIn().click();
-        return new LoginPage(driver);
-    }
-
     public WebElement clickShoesButton() {
         return findElementByXpath("//span[contains(text(), 'Взуття')]");
     }
 
-    public WebElement clickButtonGotIt() {
-        return findElementByXpath("//button[contains(text(), 'Got it')]");
+    public void clickButtonGotIt() {
+        findElementByXpath("//button[contains(text(), 'Got it')]").click();
     }
-
-
 
 
     public WebElement IncorrectDataToLogIn() {
@@ -41,5 +34,45 @@ public class HomePage extends BasePage {
 
     public WebElement CheckMyProfile() {
         return findElementByXpath("//a[contains(text(),'My Account')]");
+    }
+
+    public void goToHomePage() {
+        findElementByXpath("//img[@class='logo-alternate']").click();
+    }
+
+    public void clickButtonAboutUs() {
+        findElementByXpath("//a[contains(text(), 'About Us')]").click();
+    }
+
+    public void clickButtonContactUs() {
+        findElementByXpath("//a[contains(text(), 'Contact Us')]").click();
+    }
+
+    public void clickButtonForCustomers() {
+        findElementByXpath("//a[contains(text(), 'For Customers')]").click();
+    }
+
+    public void clickButtonApi() {
+        findElementByXpath("//a[contains(text(), 'API')]").click();
+    }
+
+    public void clickButtonCareers() {
+        findElementByXpath("//a[contains(text(), 'Careers')]").click();
+    }
+
+    public void clickButtonCart() {
+        findElementByXpath("//a[contains(text(), 'Cart ')]").click();
+    }
+
+    public WebElement searchTextCartEmpty() {
+        return findElementByXpath("//a[contains(text(), 'Your Cart is Empty')]");
+    }
+
+    public void clickBtnDownloadOnTheAppStore(){
+        findElementByXpath("//a[@class='app-btn-iphone']").click();
+    }
+
+    public void clickBtnGetItOnGooglePlay() {
+        findElementByXpath("//a[@class='app-btn-android']").click();
     }
 }
