@@ -1,6 +1,6 @@
-package DubrovskiyVlad.TestJira;
+package DubrovskiyVlad.Tests;
 
-import DubrovskiyVlad.HomePage;
+import DubrovskiyVlad.Pages.HomePage;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
@@ -15,6 +15,7 @@ public class ChekSingInbtn extends TestInit {
         homePage.clickGoiItcookie().click();
         homePage.clickEmailWrite().sendKeys("vladdubrovskiy09@gmail.com");
         homePage.GetPasswordandWrite().sendKeys("89567654");
+
 
 
 

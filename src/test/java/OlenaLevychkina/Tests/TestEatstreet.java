@@ -1,6 +1,6 @@
 package OlenaLevychkina.Tests;
 
-import DubrovskiyVlad.HomePage;
+import DubrovskiyVlad.Pages.HomePage;
 import OlenaLevychkina.Web.EatstreetPageSignIn;
 import org.openqa.selenium.By;
 import org.testng.Assert;
