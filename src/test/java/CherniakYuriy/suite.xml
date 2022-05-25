@@ -1,0 +1,7 @@
+<suite name="Suite1" verbose="2" >
+    <test name="Nopackage" >
+        <classes>
+            <class name="CherniakYuriy.Tests" />
+        </classes>
+    </test>
+</suite>
