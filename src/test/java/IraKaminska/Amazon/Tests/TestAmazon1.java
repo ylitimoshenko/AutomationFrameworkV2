@@ -19,6 +19,4 @@ public class TestAmazon1 extends TestInit {
 
         Assert.assertTrue(womenClothPage.checkURLAdress());
     }
-
-
 }
