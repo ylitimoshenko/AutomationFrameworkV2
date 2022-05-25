@@ -1,4 +1,4 @@
-package IraKaminska;
+package IraKaminska.EatStreet.Tests;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;

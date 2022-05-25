@@ -1,4 +1,4 @@
-package IraKaminska;
+package IraKaminska.EatStreet.Tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
