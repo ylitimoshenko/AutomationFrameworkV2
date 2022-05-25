@@ -1,5 +1,6 @@
-package IraKaminska;
+package IraKaminska.EatStreet.Tests;
 
+import IraKaminska.Pages.HomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ public class RestaurantsInLasVegas extends TestInit {
 
     @Test
     public void restaurantsInLasVegas() {
+        HomePage homePage = new HomePage(driver);
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://eatstreet.com");
