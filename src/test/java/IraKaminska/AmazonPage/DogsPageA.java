@@ -25,4 +25,20 @@ public class DogsPageA extends BasePage {
     public boolean checkURLdogs() {
         return driver.getCurrentUrl().contains("pets-intl-ship&bbn=16225013011&rh");
     }
+
+    public WebElement clickDogToys() {
+        return driver.findElement(By.xpath("//span[text()= 'Toys']"));
+    }
+
+    public WebElement clickDogChewToys() {
+        return driver.findElement(By.xpath("//span[text()= 'Chew Toys']"));
+    }
+
+    public WebElement clickDogPlasticChewToys() {
+        return driver.findElement(By.xpath("//span[text()= 'Plastic']"));
+    }
+
+    public boolean checkURLDogPlasticChewToys() {
+        return driver.getCurrentUrl().contains("Cp_n_material_browse");
+    }
 }
