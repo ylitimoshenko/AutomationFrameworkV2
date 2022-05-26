@@ -41,4 +41,24 @@ public class DogsPageA extends BasePage {
     public boolean checkURLDogPlasticChewToys() {
         return driver.getCurrentUrl().contains("Cp_n_material_browse");
     }
+
+    public WebElement clickDogFood() {
+        return driver.findElement(By.xpath("//span[text()= 'Food']"));
+    }
+
+    public WebElement clickDogWetFoodBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Wet']"));
+    }
+
+    public WebElement clickAdultDogFoodBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Adult']"));
+    }
+
+    public WebElement clickAllNaturalFoodBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'All Natural']"));
+    }
+
+    public boolean checkURLAdultDogWetFoodAllNatural() {
+        return driver.getCurrentUrl().contains("sr_nr_p_n_feature_three");
+    }
 }
