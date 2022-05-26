@@ -29,4 +29,16 @@ public class PetSuppliesPage extends BasePage {
     public WebElement clickDryDogsFoodGlutenFree() {
         return driver.findElement(By.xpath("//span[text()= 'Gluten-Free']"));
     }
+
+    public WebElement clickCatsBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Cats']"));
+    }
+
+    public WebElement clickBedsFurniture() {
+        return driver.findElement(By.xpath("//span[text()= 'Beds & Furniture']"));
+    }
+
+    public WebElement clickBedsFurnitureUpTo25() {
+        return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
+    }
 }
