@@ -41,4 +41,8 @@ public class PetSuppliesPage extends BasePage {
     public WebElement clickBedsFurnitureUpTo25() {
         return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
     }
+
+    public WebElement clickBirdsBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Birds']"));
+    }
 }
