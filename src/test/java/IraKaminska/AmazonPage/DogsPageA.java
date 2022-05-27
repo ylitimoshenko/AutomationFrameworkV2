@@ -61,4 +61,20 @@ public class DogsPageA extends BasePage {
     public boolean checkURLAdultDogWetFoodAllNatural() {
         return driver.getCurrentUrl().contains("sr_nr_p_n_feature_three");
     }
+
+    public WebElement clickDogHealthSuppliesBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Health Supplies']"));
+    }
+
+    public WebElement clickDogDentalCareBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Dental Care']"));
+    }
+
+    public WebElement clickUpT025Btn() {
+        return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
+    }
+
+    public boolean checkURLDogDentalCare() {
+        return driver.getCurrentUrl().contains("pets-intl-ship&bbn");
+    }
 }
