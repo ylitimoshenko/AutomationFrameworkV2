@@ -1,12 +1,17 @@
 package AlinaLevchenko.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
 import java.util.List;
 
 public class HomePagePriceForDesignApartament extends BasePage {
+    public HomePagePriceForDesignApartament(WebDriver driver) {
+        super(driver);
+    }
+
     public WebElement price() {
         return driver.findElements(By.xpath("//li[@class='dropdown']")).get(8);
     }

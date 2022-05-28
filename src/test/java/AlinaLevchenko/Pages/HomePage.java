@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageobject.BasePage;
 
+import java.util.Collection;
 import java.util.List;
 
 public class HomePage extends BasePage {
@@ -52,4 +53,37 @@ public class HomePage extends BasePage {
     public WebElement cityBtn() {
         return findElementByXpath("//div/div[@class='RegionSelect css-2b097c-container']");
     }
+
+    public WebElement ultramarket() {
+        return driver.findElement(By.xpath("//*[@alt='Ultramarket']"));
+
+    }
+
+  public List<WebElement> selectBacary() {
+       return findElementsByXpath("//li[@class='jsx-2404386530 CategoriesMenuListItem']");
+    }
+
+    public List<WebElement> selectBread() {
+        return findElementsByXpath("//div[@data-testid='nestedListItem']");
+    }
+
+    public WebElement bread() {
+        return findElementByXpath("//h1[contains(text(),'Пекарня')]");
+    }
+
+    public List<WebElement> selectContacts() {
+        return findElementsByXpath("//a[contains(text(),'Контакти')]");
+    }
+
+    public WebElement adress() {
+        return driver.findElement(By.xpath("//div[contains(text(),'Адреса')]"));
+    }
+
+    public List<WebElement> contentZakazUa() {
+        return findElementsByXpath("//span[@class='jsx-429672290 UaContacts__wrapIcon']");
+    }
 }
+
+
+
+
