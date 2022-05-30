@@ -61,4 +61,12 @@ public class DogsPageA extends BasePage {
     public boolean checkURLAdultDogWetFoodAllNatural() {
         return driver.getCurrentUrl().contains("sr_nr_p_n_feature_three");
     }
+
+    public WebElement clickDogTreatsBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Treats']"));
+    }
+
+    public boolean checkURLDogTreats() {
+        return driver.getCurrentUrl().contains("sr_nr_n_2");
+    }
 }

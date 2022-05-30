@@ -8,7 +8,7 @@ import tests.TestInit;
 public class TestpriceForDesignApartnent extends TestInit {
     @Test
     public void priceForDesignApartnent(){
-        HomePagePriceForDesignApartament homePageInteriorDesign =  new HomePagePriceForDesignApartament()driver);
+        HomePagePriceForDesignApartament homePageInteriorDesign =  new HomePagePriceForDesignApartament(driver);
         openUrl("https://polyakova.biz/ua");
         homePageInteriorDesign.price().click();
         homePageInteriorDesign.designInteriorPriceBtn().get(13);
