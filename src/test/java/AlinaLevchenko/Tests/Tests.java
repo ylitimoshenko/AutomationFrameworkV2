@@ -54,7 +54,6 @@ public class Tests extends TestInit {
         homePageZakazUa.adress().click();
 
         Assert.assertTrue(homePageZakazUa.contentZakazUa().get(0).isDisplayed());
-
     }
 }
 
