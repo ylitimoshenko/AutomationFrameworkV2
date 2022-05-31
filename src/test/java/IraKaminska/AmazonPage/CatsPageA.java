@@ -25,4 +25,12 @@ public class CatsPageA extends BasePage {
     public boolean checkURLCatDryFood() {
         return driver.getCurrentUrl().contains("pets-intl-ship&bbn");
     }
+
+    public WebElement clickCatToysBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Toys']"));
+    }
+
+    public boolean checkURLCatToys() {
+        return driver.getCurrentUrl().contains("pets-intl-ship&bbn");
+    }
 }
