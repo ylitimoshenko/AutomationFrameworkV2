@@ -22,4 +22,20 @@ public class RozetkaTest extends TestInit {
 
         Assert.assertTrue(homePageRozetkaTest.ordering().isDisplayed());
     }
+
+    @Test
+    public void petProducts() {
+        RozetkaHomePage homePageRozetkaTest = new RozetkaHomePage(driver);
+        openUrl("https://rozetka.com.ua/");
+        homePageRozetkaTest.selectMunuCategories().get(12).click();
+        homePageRozetkaTest.tileDogs().get(1).click();
+        homePageRozetkaTest.selectfeedForDog().get(0).click();
+        homePageRozetkaTest.showMore().click();
+        homePageRozetkaTest.feedForBulldog().click();
+        homePageRozetkaTest.productCharacteristics().click();
+        homePageRozetkaTest.buyInCreditBtn().click();
+        homePageRozetkaTest.selectOnFourPartsBtn().get(1).click();
+
+        Assert.assertTrue(homePageRozetkaTest.orderingBuy().isDisplayed());
+    }
 }
