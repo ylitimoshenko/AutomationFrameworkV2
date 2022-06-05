@@ -34,10 +34,10 @@ public class TestInit {
         }
     }
 
-    @AfterMethod
-    public void afterMethod() {
-       driver.quit();
-    }
+//    @AfterMethod
+//    public void afterMethod() {
+//       driver.quit();
+//    }
 
 
     public void sleep(int seconds) {

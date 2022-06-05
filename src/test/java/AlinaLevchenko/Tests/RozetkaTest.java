@@ -38,4 +38,48 @@ public class RozetkaTest extends TestInit {
 
         Assert.assertTrue(homePageRozetkaTest.orderingBuy().isDisplayed());
     }
+
+    @Test
+    public void childrensShoppingList() {
+        RozetkaHomePage homePageRozetkaTest = new RozetkaHomePage(driver);
+        openUrl("https://rozetka.com.ua/");
+        homePageRozetkaTest.selectChildMenu().get(11).click();
+        homePageRozetkaTest.selectСreativityВevelopment().click();
+        homePageRozetkaTest.selectPazls().click();
+        homePageRozetkaTest.pazlsZooBuy().get(0).click();
+        homePageRozetkaTest.putInBasketPazl().click();
+        homePageRozetkaTest.continueShoppingBtn().click();
+        homePageRozetkaTest.childToysBtn().click();
+        homePageRozetkaTest.roboticsBtn().click();
+        homePageRozetkaTest.checkboxFilterVoice().click();
+
+        Assert.assertTrue(homePageRozetkaTest.toysWithVoice().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.blueSmartRobot().get(0).isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.redSmartRobot().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.greySmartRobot().get(0).isDisplayed());
+    }
+    @Test
+    public void laptopReview(){   //огляд ноутбуків на сайті
+        RozetkaHomePage homePageRozetkaTest = new RozetkaHomePage(driver);
+        openUrl("https://rozetka.com.ua/");
+        homePageRozetkaTest.searchLaptop().sendKeys("Lenovo");
+        homePageRozetkaTest.laptopsLenovo().click();
+        homePageRozetkaTest.checkboxFilterLenovo().get(3).click();
+        homePageRozetkaTest.menuBtn().click();
+        homePageRozetkaTest.selectAsusBtn().get(0).click();
+        homePageRozetkaTest.fourCoreProcessor().click();
+        homePageRozetkaTest.inStockBtn().click();
+        homePageRozetkaTest.iconMenuBtn().get(1).click();
+        homePageRozetkaTest.helpCenterBtn().click();
+
+        Assert.assertTrue(homePageRozetkaTest.mostRelevant().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.payment().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.informationAboutCargo().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.bonusAccountInPremium().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.warrantyReturn().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.delivery().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.helpsInOrder().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.websitePersonalAccount().isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.otherSellers().isDisplayed());
+    }
 }
