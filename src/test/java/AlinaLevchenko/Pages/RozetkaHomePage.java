@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.xml.sax.Locator;
 import pageobject.BasePage;
 import java.util.List;
 
@@ -17,7 +18,7 @@ public class RozetkaHomePage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, BASIC_TIME);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locator)));
         return driver.findElement(By.xpath(Locator));
-    }
+        }
 
     public WebElement findElementByXpath(String locator) {
         return waitElementToBeClickable(locator);
@@ -37,7 +38,7 @@ public class RozetkaHomePage extends BasePage {
     }
 
     public WebElement putInBasket() {
-        return driver.findElement(By.xpath("//span[contains(text(),' Купить ')]"));
+        return driver.findElement(By.xpath("//span[@class='buy-button__label ng-star-inserted']"));
     }
 
     public WebElement placeOnOrder() {
@@ -96,30 +97,6 @@ public class RozetkaHomePage extends BasePage {
 
     public WebElement selectPazls() {
         return driver.findElement(By.xpath(" //span[contains(text(),'Пазлы ')]"));
-    }
-
-    public List<WebElement> pazlsZooBuy() {
-        return waitVisibilityOfAllElementsLocatedBy("//*[contains(text(),'Осторожно на дороге')]");
-    }
-
-    public WebElement putInBasketPazl() {
-        return waitElementToBeClickable("//li[@class='product-buttons__item ng-star-inserted']");
-    }
-
-    public WebElement continueShoppingBtn() {
-        return waitElementToBeClickable("//*[@class='button button_size_medium button_color_gray cart-footer__continue ng-star-inserted']");
-    }
-
-    public WebElement childToysBtn() {
-        return waitElementToBeClickable("//span[contains(text(),'Детские игрушки')]");
-    }
-
-    public WebElement roboticsBtn() {
-        return waitElementToBeClickable("//span[contains(text(),'Робототехника ')]");
-    }
-
-    public WebElement checkboxFilterVoice() {
-        return waitElementToBeClickable("//a[@data-id='Голосовое']");
     }
 
     public WebElement toysWithVoice() {
@@ -210,5 +187,42 @@ public class RozetkaHomePage extends BasePage {
 
     public WebElement otherSellers() {
         return driver.findElement(By.xpath("//a[contains(text(),'Другие продавцы')]"));
+    }
+
+    public WebElement overflowBtn() {
+       return waitElementToBeClickable("//body[@style='overflow-anchor:none;']");
+    }
+
+    public WebElement catsBtn() {
+        return waitElementToBeClickable("//a[@data-id='44 Cats']");
+    }
+
+    public WebElement selectcatalog() {
+        return waitElementToBeClickable(" //button[contains(text(),'Каталог')]");
+    }
+
+    public List<WebElement> menuicon() {
+        return waitVisibilityOfAllElementsLocatedBy("//span[@class='menu-categories__icon']");
+    }
+
+    public WebElement toysForBeach() {
+        return waitElementToBeClickable(" //a[contains(text(),'Игрушки для пляжа, песочницы')]");
+    }
+
+    public WebElement organizeForBath() {
+        return waitElementToBeClickable("//*[@style='overflow-anchor:none;']");
+    }
+
+    public WebElement nadyvnieKresla() {
+        return  waitElementToBeClickable("//a[@data-id='Надувное кресло']");
+
+    }
+
+    public WebElement nadyvnueBaseyny() {
+        return waitElementToBeClickable("//a[@data-id='Надувные бассейны']");
+    }
+
+    public WebElement igrushkiDlyaVannuPlyagha() {
+        return waitElementToBeClickable("//h1[contains(text(),'Игрушки для пляжа, песочницы и ванной')]");
     }
 }

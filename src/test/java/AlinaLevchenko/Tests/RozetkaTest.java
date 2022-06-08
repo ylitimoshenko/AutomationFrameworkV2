@@ -6,6 +6,7 @@ import tests.TestInit;
 
 public class RozetkaTest extends TestInit {
 
+
     @Test
     public void putLaptopInBasket() {
         RozetkaHomePage homePageRozetkaTest = new RozetkaHomePage(driver);
@@ -46,20 +47,20 @@ public class RozetkaTest extends TestInit {
         homePageRozetkaTest.selectChildMenu().get(11).click();
         homePageRozetkaTest.selectСreativityВevelopment().click();
         homePageRozetkaTest.selectPazls().click();
-        homePageRozetkaTest.pazlsZooBuy().get(0).click();
-        homePageRozetkaTest.putInBasketPazl().click();
-        homePageRozetkaTest.continueShoppingBtn().click();
-        homePageRozetkaTest.childToysBtn().click();
-        homePageRozetkaTest.roboticsBtn().click();
-        homePageRozetkaTest.checkboxFilterVoice().click();
+        homePageRozetkaTest.overflowBtn().click();
+        homePageRozetkaTest.catsBtn().click();
+        homePageRozetkaTest.selectcatalog().click();
+        homePageRozetkaTest.menuicon().get(11).click();
+        homePageRozetkaTest.toysForBeach().click();
+        homePageRozetkaTest.organizeForBath().click();
+        homePageRozetkaTest.nadyvnieKresla().click();
+        homePageRozetkaTest.nadyvnueBaseyny().click();
 
-        Assert.assertTrue(homePageRozetkaTest.toysWithVoice().isDisplayed());
-        Assert.assertTrue(homePageRozetkaTest.blueSmartRobot().get(0).isDisplayed());
-        Assert.assertTrue(homePageRozetkaTest.redSmartRobot().isDisplayed());
-        Assert.assertTrue(homePageRozetkaTest.greySmartRobot().get(0).isDisplayed());
+        Assert.assertTrue(homePageRozetkaTest.igrushkiDlyaVannuPlyagha().isDisplayed());
     }
+
     @Test
-    public void laptopReview(){   //огляд ноутбуків на сайті
+    public void laptopReview() {   //огляд ноутбуків на сайті
         RozetkaHomePage homePageRozetkaTest = new RozetkaHomePage(driver);
         openUrl("https://rozetka.com.ua/");
         homePageRozetkaTest.searchLaptop().sendKeys("Lenovo");
