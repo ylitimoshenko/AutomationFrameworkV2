@@ -45,4 +45,8 @@ public class PetSuppliesPage extends BasePage {
     public WebElement clickBirdsBtn() {
         return driver.findElement(By.xpath("//span[text()= 'Birds']"));
     }
+
+    public WebElement clickSmallAnimals() {
+        return driver.findElement(By.xpath("//span[text()= 'Small Animals']"));
+    }
 }
