@@ -1,4 +1,4 @@
-package tests;
+package ClasesToAll;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -13,7 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestInit {
-
     public WebDriver driver;
     ChromeOptions options = new ChromeOptions();
 
@@ -36,7 +35,7 @@ public class TestInit {
 
     @AfterMethod
     public void afterMethod() {
-       driver.quit();
+        driver.quit();
     }
 
 

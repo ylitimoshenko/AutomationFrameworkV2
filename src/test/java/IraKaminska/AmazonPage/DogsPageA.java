@@ -3,10 +3,10 @@ package IraKaminska.AmazonPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class DogsPageA extends BasePage {
-    public DogsPageA (WebDriver driver) {
+    public DogsPageA(WebDriver driver) {
         super(driver);
     }
 
@@ -74,7 +74,23 @@ public class DogsPageA extends BasePage {
         return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
     }
 
-    public boolean checkURLDogDentalCare() {
+    public WebElement clickDogGroomingBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Grooming']"));
+    }
+
+    public WebElement clickUpto25Btn() {
+        return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
+    }
+
+    public WebElement clickDogGroomingColonesBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Colognes']"));
+    }
+
+    public boolean checkURLDogGroomingColognes() {
         return driver.getCurrentUrl().contains("pets-intl-ship&bbn");
+    }
+
+    public WebElement clickDogTreatsBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Treats']"));
     }
 }

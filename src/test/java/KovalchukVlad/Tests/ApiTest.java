@@ -6,8 +6,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
-import static pageobject.BasePage.driver;
-
 public class ApiTest extends TestInit {
 
     @Test

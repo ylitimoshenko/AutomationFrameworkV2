@@ -3,7 +3,7 @@ package OlenaLevychkina.Web;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class EatstreetPageSignIn extends BasePage {
     public EatstreetPageSignIn(WebDriver driver) {

@@ -3,7 +3,7 @@ package IraKaminska.AmazonPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class PetSuppliesPage extends BasePage {
     public PetSuppliesPage(WebDriver driver) {
@@ -44,5 +44,9 @@ public class PetSuppliesPage extends BasePage {
 
     public WebElement clickBirdsBtn() {
         return driver.findElement(By.xpath("//span[text()= 'Birds']"));
+    }
+
+    public WebElement clickSmallAnimals() {
+        return driver.findElement(By.xpath("//span[text()= 'Small Animals']"));
     }
 }

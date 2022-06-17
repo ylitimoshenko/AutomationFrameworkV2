@@ -1,28 +1,27 @@
 package IraKaminska.Amazon.Tests;
 
-import IraKaminska.AmazonPage.DogsPageA;
 import IraKaminska.AmazonPage.HomePageA;
 import IraKaminska.AmazonPage.PetSuppliesPage;
+import IraKaminska.AmazonPage.SmallAnimalsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
-public class DogDentalCareHealthSuppliesUpTo25 extends TestInit {
+public class CheckFoodForSmallAnimalsUpTo25 extends TestInit {
 
     @Test
-    public void dogDentalCareHealthSuppliesUpTo25 () {
+    public void CheckFoodForSmallAnimalsUpTo25 () {
         HomePageA homePageA = new HomePageA(driver);
         openUrl("https://www.amazon.com/");
         homePageA.clickAllBtn().click();
         homePageA.clickPetSuppliesBtn().click();
         homePageA.clickSearchBtn().click();
         PetSuppliesPage petSuppliesPage = new PetSuppliesPage(driver);
-        petSuppliesPage.clickDogsBtn().click();
-        DogsPageA dogsPageA = new DogsPageA(driver);
-        dogsPageA.clickDogHealthSuppliesBtn().click();
-        dogsPageA.clickDogDentalCareBtn().click();
-        dogsPageA.clickUpT025Btn().click();
+        petSuppliesPage.clickSmallAnimals().click();
+        SmallAnimalsPage smallAnimalsPage = new SmallAnimalsPage(driver);
+        smallAnimalsPage.clickFoodForSmallAnimals().click();
+        smallAnimalsPage.clickFoodForSmallAnimalsUpTo25().click();
 
-//        Assert.assertTrue(driver.getCurrentUrl().contains(""));
+        Assert.assertTrue(smallAnimalsPage.checkURLFoodForSmallAnimals());
     }
 }

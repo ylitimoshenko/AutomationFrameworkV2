@@ -2,7 +2,7 @@ package JuliaTymoshenko.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 import java.util.ArrayList;
 import java.util.List;
 

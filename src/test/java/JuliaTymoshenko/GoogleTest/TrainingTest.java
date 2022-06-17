@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import JuliaTymoshenko.Pages.HomePage;
 import tests.TestInit;
 
-public class TrainingTest extends TestInit {
+public class  TrainingTest extends TestInit {
 
     @Test
     public void testGoogle() {
