@@ -23,6 +23,6 @@ public class DogDentalCareHealthSuppliesUpTo25 extends TestInit {
         dogsPageA.clickDogDentalCareBtn().click();
         dogsPageA.clickUpT025Btn().click();
 
-//        Assert.assertTrue(driver.getCurrentUrl().contains(""));
+        Assert.assertTrue(driver.getCurrentUrl().contains("pets-intl-ship&bbn"));
     }
 }
