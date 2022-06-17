@@ -1,11 +1,12 @@
 package KulykYuliya.Tests;
 
+import ClasesToAll.TestInit;
 import KulykYuliya.Pages.EnterPage;
 import KulykYuliya.Pages.HomePage;
 import KulykYuliya.Pages.RestPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
+
 
 public class FindRestaurantsWithDessertUnArizona extends TestInit {
 
