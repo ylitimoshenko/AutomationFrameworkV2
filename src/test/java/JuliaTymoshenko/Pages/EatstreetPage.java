@@ -6,9 +6,9 @@ import ClasesToAll.BasePage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomePage extends BasePage {
+public class EatstreetPage extends BasePage {
 
-    public HomePage(WebDriver driver) {
+    public EatstreetPage(WebDriver driver) {
         super(driver);
     }
 
