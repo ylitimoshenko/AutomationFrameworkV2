@@ -7,10 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.TestInit;
 
-public class CheckDogGroomingColognesUpTo25 extends TestInit {
+public class DogDentalCareHealthSuppliesUpTo25 extends TestInit {
 
     @Test
-    public void checkDogGroomingColognesUpTo25 () {
+    public void dogDentalCareHealthSuppliesUpTo25 () {
         HomePageA homePageA = new HomePageA(driver);
         openUrl("https://www.amazon.com/");
         homePageA.clickAllBtn().click();
@@ -19,10 +19,10 @@ public class CheckDogGroomingColognesUpTo25 extends TestInit {
         PetSuppliesPage petSuppliesPage = new PetSuppliesPage(driver);
         petSuppliesPage.clickDogsBtn().click();
         DogsPageA dogsPageA = new DogsPageA(driver);
-        dogsPageA.clickDogGroomingBtn().click();
-        dogsPageA.clickDogGroomingColonesBtn().click();
-        dogsPageA.clickUpto25Btn().click();
+        dogsPageA.clickDogHealthSuppliesBtn().click();
+        dogsPageA.clickDogDentalCareBtn().click();
+        dogsPageA.clickUpT025Btn().click();
 
-        Assert.assertTrue(dogsPageA.checkURLDogGroomingColognes());
+        Assert.assertTrue(driver.getCurrentUrl().contains("pets-intl-ship&bbn"));
     }
 }

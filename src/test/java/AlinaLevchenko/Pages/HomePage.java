@@ -3,9 +3,8 @@ package AlinaLevchenko.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
-import java.util.Collection;
 import java.util.List;
 
 public class HomePage extends BasePage {

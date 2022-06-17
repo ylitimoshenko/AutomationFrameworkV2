@@ -3,10 +3,10 @@ package IraKaminska.AmazonPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class DogsPageA extends BasePage {
-    public DogsPageA (WebDriver driver) {
+    public DogsPageA(WebDriver driver) {
         super(driver);
     }
 
@@ -62,12 +62,16 @@ public class DogsPageA extends BasePage {
         return driver.getCurrentUrl().contains("sr_nr_p_n_feature_three");
     }
 
-    public WebElement clickDogTreatsBtn() {
-        return driver.findElement(By.xpath("//span[text()= 'Treats']"));
+    public WebElement clickDogHealthSuppliesBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Health Supplies']"));
     }
 
-    public boolean checkURLDogTreats() {
-        return driver.getCurrentUrl().contains("sr_nr_n_2");
+    public WebElement clickDogDentalCareBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Dental Care']"));
+    }
+
+    public WebElement clickUpT025Btn() {
+        return driver.findElement(By.xpath("//span[text()= 'Up to $25']"));
     }
 
     public WebElement clickDogGroomingBtn() {
@@ -84,5 +88,9 @@ public class DogsPageA extends BasePage {
 
     public boolean checkURLDogGroomingColognes() {
         return driver.getCurrentUrl().contains("pets-intl-ship&bbn");
+    }
+
+    public WebElement clickDogTreatsBtn() {
+        return driver.findElement(By.xpath("//span[text()= 'Treats']"));
     }
 }

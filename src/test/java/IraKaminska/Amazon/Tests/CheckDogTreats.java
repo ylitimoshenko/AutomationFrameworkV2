@@ -21,6 +21,6 @@ public class CheckDogTreats extends TestInit {
         DogsPageA dogsPageA = new DogsPageA(driver);
         dogsPageA.clickDogTreatsBtn().click();
 
-        Assert.assertTrue(dogsPageA.checkURLDogTreats());
+        Assert.assertTrue(driver.getCurrentUrl().contains("pets-intl-ship"));
     }
 }

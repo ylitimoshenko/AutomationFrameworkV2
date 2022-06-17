@@ -2,7 +2,7 @@ package KulykYuliya.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class RestPage extends BasePage {
     public RestPage(WebDriver driver) {

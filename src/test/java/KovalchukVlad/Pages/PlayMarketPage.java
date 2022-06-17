@@ -2,7 +2,7 @@ package KovalchukVlad.Pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class PlayMarketPage extends BasePage {
     public PlayMarketPage(WebDriver driver) {
