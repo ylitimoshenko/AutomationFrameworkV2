@@ -1,9 +1,9 @@
 package JuliaTymoshenko.EatStreet.Tests;
 
+import ClasesToAll.TestInit;
 import JuliaTymoshenko.Pages.EatstreetPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class LiveChat extends TestInit {
 

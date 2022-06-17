@@ -1,9 +1,9 @@
 package AlinaLevchenko.Tests;
 
 import AlinaLevchenko.Pages.HomePage;
+import ClasesToAll.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class Tests extends TestInit {
 

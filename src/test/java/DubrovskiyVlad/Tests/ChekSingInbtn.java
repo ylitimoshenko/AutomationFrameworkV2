@@ -1,8 +1,8 @@
 package DubrovskiyVlad.Tests;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.HomePage;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class ChekSingInbtn extends TestInit {
 

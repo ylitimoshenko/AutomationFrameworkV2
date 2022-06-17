@@ -1,9 +1,9 @@
 package DubrovskiyVlad;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class FirstTest extends TestInit {
 

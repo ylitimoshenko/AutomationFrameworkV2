@@ -1,10 +1,10 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.AboutUsPage;
 import KovalchukVlad.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class AboutUsTest extends TestInit {
 

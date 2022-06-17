@@ -1,10 +1,10 @@
 package IraKaminska.EatStreet.Tests;
 
+import ClasesToAll.TestInit;
 import IraKaminska.Pages.HomePage;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class Tests extends TestInit {
 

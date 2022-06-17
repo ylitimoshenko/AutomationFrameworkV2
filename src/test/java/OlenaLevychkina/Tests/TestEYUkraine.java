@@ -1,9 +1,9 @@
 package OlenaLevychkina.Tests;
 
+import ClasesToAll.TestInit;
 import OlenaLevychkina.Web.EYUkraineHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class TestEYUkraine extends TestInit {
     @Test
