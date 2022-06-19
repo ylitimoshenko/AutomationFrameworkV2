@@ -1,10 +1,10 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.HomePage;
 import KovalchukVlad.Pages.PlayMarketPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 import java.util.ArrayList;
 

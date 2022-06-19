@@ -1,11 +1,10 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.CareersPage;
 import KovalchukVlad.Pages.HomePage;
-import NazarukBogdan.Pages.DriverCareersPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CareersTest extends TestInit {
 

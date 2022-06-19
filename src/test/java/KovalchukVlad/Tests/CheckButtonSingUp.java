@@ -1,11 +1,11 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.HomePage;
 import KovalchukVlad.Pages.LoginPage;
 import KovalchukVlad.Pages.RegPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CheckButtonSingUp extends TestInit {
 

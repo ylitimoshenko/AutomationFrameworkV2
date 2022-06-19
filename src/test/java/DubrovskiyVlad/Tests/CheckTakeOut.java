@@ -1,10 +1,10 @@
 package DubrovskiyVlad.Tests;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.HomePage;
 import DubrovskiyVlad.Pages.LosAngRestPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CheckTakeOut extends TestInit {
 

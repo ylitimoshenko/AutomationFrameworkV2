@@ -1,10 +1,9 @@
 package KulykYuliya.Tests;
 
-import KovalchukVlad.Pages.LoginPage;
+import ClasesToAll.TestInit;
 import KulykYuliya.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CheckBtnSingIn extends TestInit {
     @Test

@@ -1,10 +1,10 @@
 package IraKaminska.Amazon.Tests;
 
+import ClasesToAll.TestInit;
 import IraKaminska.AmazonPage.HomePageA;
 import IraKaminska.AmazonPage.WomenClothPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class TestAmazon1 extends TestInit {
 

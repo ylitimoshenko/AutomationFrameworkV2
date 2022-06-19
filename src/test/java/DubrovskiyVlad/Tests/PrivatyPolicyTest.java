@@ -1,10 +1,10 @@
 package DubrovskiyVlad.Tests;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.HomePage;
 import DubrovskiyVlad.Pages.PrivatyPolicePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class PrivatyPolicyTest extends TestInit {
 
