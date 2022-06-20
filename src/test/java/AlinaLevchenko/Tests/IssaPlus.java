@@ -1,9 +1,9 @@
 package AlinaLevchenko.Tests;
 
 import AlinaLevchenko.Pages.HomePageIssaPlus;
+import ClasesToAll.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class IssaPlus extends TestInit {
 
