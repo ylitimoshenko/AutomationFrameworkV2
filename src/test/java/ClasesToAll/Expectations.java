@@ -1,4 +1,4 @@
-package pageobject;
+package ClasesToAll;
 
 import org.openqa.selenium.WebElement;
 

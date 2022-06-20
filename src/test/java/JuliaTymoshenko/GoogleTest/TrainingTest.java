@@ -1,13 +1,12 @@
 package JuliaTymoshenko.GoogleTest;
 
+import ClasesToAll.TestInit;
 import JuliaTymoshenko.Pages.GooglePage;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import JuliaTymoshenko.Pages.HomePage;
-import tests.TestInit;
 
-public class TrainingTest extends TestInit {
+public class  TrainingTest extends TestInit {
 
     @Test
     public void testGoogle() {

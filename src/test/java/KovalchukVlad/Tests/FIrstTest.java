@@ -1,9 +1,8 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.HomePage;
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-import tests.TestInit;
+import org.testng.annotations.Test;;
 
 public class FIrstTest extends TestInit {
 

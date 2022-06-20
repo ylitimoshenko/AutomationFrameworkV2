@@ -1,11 +1,11 @@
 package IraKaminska.Amazon.Tests;
 
+import ClasesToAll.TestInit;
 import IraKaminska.AmazonPage.DogsPageA;
 import IraKaminska.AmazonPage.HomePageA;
 import IraKaminska.AmazonPage.PetSuppliesPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CheckDogTreats extends TestInit {
 
@@ -21,6 +21,6 @@ public class CheckDogTreats extends TestInit {
         DogsPageA dogsPageA = new DogsPageA(driver);
         dogsPageA.clickDogTreatsBtn().click();
 
-        Assert.assertTrue(dogsPageA.checkURLDogTreats());
+        Assert.assertTrue(driver.getCurrentUrl().contains("pets-intl-ship"));
     }
 }

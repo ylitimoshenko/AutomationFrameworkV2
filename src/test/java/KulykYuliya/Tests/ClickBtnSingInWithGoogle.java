@@ -1,10 +1,10 @@
 package KulykYuliya.Tests;
 
+import ClasesToAll.TestInit;
 import KulykYuliya.Pages.HomePage;
 import KulykYuliya.Pages.RegistrationPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class ClickBtnSingInWithGoogle extends TestInit {
     @Test

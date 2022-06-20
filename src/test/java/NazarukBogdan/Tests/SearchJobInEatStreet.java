@@ -1,9 +1,9 @@
 package NazarukBogdan.Tests;
 
+import ClasesToAll.TestInit;
 import NazarukBogdan.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 import java.util.ArrayList;
 
