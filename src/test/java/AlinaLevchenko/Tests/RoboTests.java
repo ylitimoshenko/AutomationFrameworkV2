@@ -1,7 +1,8 @@
 package AlinaLevchenko.Tests;
 import AlinaLevchenko.Pages.HomePageRobo;
+import ClasesToAll.TestInit;
 import org.testng.annotations.Test;
-import tests.TestInit;
+
 
 public class RoboTests extends TestInit {
     @Test

@@ -1,11 +1,11 @@
 package IraKaminska.Amazon.Tests;
 
+import ClasesToAll.TestInit;
 import IraKaminska.AmazonPage.HomePageA;
 import IraKaminska.AmazonPage.PetSuppliesPage;
 import IraKaminska.AmazonPage.SmallAnimalsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class CheckFoodForSmallAnimalsUpTo25 extends TestInit {
 

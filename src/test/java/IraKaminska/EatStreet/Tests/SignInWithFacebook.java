@@ -1,5 +1,6 @@
 package IraKaminska.EatStreet.Tests;
 
+import ClasesToAll.TestInit;
 import IraKaminska.Pages.HomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -7,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class SignInWithFacebook extends TestInit {
 

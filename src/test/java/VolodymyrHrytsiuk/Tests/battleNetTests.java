@@ -1,9 +1,9 @@
 package VolodymyrHrytsiuk.Tests;
 
+import ClasesToAll.TestInit;
 import VolodymyrHrytsiuk.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class battleNetTests extends TestInit {
     @Test

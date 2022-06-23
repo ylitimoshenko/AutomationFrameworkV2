@@ -1,8 +1,8 @@
 package AlinaLevchenko.Tests;
 import AlinaLevchenko.Pages.RozetkaHomePage;
+import ClasesToAll.TestInit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class RozetkaTest extends TestInit {
 
