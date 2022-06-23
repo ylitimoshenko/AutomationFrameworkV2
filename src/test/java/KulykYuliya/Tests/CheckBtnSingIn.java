@@ -4,10 +4,8 @@ import ClasesToAll.TestInit;
 import KulykYuliya.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-<<<<<<< HEAD
 
-=======
->>>>>>> 0fc2ea172505d22da450f18637d69872a6b21c24
+
 
 public class CheckBtnSingIn extends TestInit {
     @Test
