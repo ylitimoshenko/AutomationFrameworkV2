@@ -1,4 +1,4 @@
-package BondarenkoYevhenii.Tests;
+package BondarenkoYevhenii.Tests.Tests;
 
 public class FirstJavaCode {
     public static void main(String[] args) {
