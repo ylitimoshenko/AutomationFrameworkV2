@@ -3,7 +3,6 @@ package BondarenkoYevhenii.Tests.Tests;
 import BondarenkoYevhenii.Tests.Pages.YakabooHomePage;
 import ClasesToAll.TestInit;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
@@ -13,6 +12,7 @@ public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
     public void checkIfColorOfButtonChangeToRed(){
         YakabooHomePage yakabooHomePage = new YakabooHomePage(driver);
         Actions action = new Actions(driver);
+
         openUrl("https://www.yakaboo.ua/");
         sleep(5);
         action.moveToElement(yakabooHomePage.aboutBtn()).perform();
@@ -20,4 +20,7 @@ public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
           }
 
     }
+
+
+        openUrl("https://www.yakaboo.ua/");
 

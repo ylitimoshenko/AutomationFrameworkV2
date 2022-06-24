@@ -14,7 +14,7 @@ public class BuyTvTest extends TestInit {
         hotlineSite.getSortCheckbox().get(0).click();
         hotlineSite.getCheckBox().get(0).click();
         hotlineSite.getCheckBox().get(1).click();
-        hotlineSite.getCheckBox().get(85).click();
+
         hotlineSite.getCheckBox().get(11).click();
         sleep(3);
         hotlineSite.getResultFromSorting().get(0).click();
