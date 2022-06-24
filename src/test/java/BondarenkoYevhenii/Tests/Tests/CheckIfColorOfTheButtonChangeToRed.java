@@ -12,4 +12,15 @@ public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
     public void checkIfColorOfButtonChangeToRed(){
         YakabooHomePage yakabooHomePage = new YakabooHomePage(driver);
         Actions action = new Actions(driver);
+
         openUrl("https://www.yakaboo.ua/");
+        sleep(5);
+        action.moveToElement(yakabooHomePage.aboutBtn()).perform();
+        Assert.assertEquals(yakabooHomePage.aboutBtn().getCssValue("color"),"rgba(234, 87, 61, 1)");
+          }
+
+    }
+
+
+        openUrl("https://www.yakaboo.ua/");
+
