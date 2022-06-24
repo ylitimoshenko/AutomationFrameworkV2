@@ -20,7 +20,7 @@ public class IteratorClass {
 
         Iterator<String> mozheiterator = spusokArray.iterator();
         while(mozheiterator.hasNext()) {
-System.out.println(spusokArray);
+
             mozheiterator.next();
             mozheiterator.remove();
         }
