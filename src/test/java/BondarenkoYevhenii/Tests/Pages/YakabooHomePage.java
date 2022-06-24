@@ -13,7 +13,6 @@ public class YakabooHomePage extends BasePage {
         super(driver);
     }
     public static final String ABOUT_BTN = "//a[text()='Про Yakaboo']";
-
     public WebElement aboutBtn(){ return findElementByXpath(ABOUT_BTN);}
 
 
