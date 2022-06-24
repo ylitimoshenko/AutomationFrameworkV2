@@ -13,12 +13,3 @@ public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
         YakabooHomePage yakabooHomePage = new YakabooHomePage(driver);
         Actions action = new Actions(driver);
         openUrl("https://www.yakaboo.ua/");
-        yakabooHomePage.deliveryButton();
-        yakabooHomePage.deliveryButton().getAttribute("text");
-        {boolean color = (yakabooHomePage.deliveryButton().getCssValue("color")) == "#446699";
-            System.out.println("color of button: is not blue");
-
-
-    }
-    }
-}
