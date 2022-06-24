@@ -12,9 +12,9 @@ public class YakabooHomePage extends BasePage {
     public YakabooHomePage(WebDriver driver) {
         super(driver);
     }
-    public static final String DELIVERY_BUTTON = "(//a[text()='Доставка'])[1]";
+    public static final String ABOUT_BTN = "//a[text()='Про Yakaboo']";
 
-    public WebElement deliveryButton(){ return moveToWithExplicitWait(DELIVERY_BUTTON);}
+    public WebElement aboutBtn(){ return findElementByXpath(ABOUT_BTN);}
 
 
 
