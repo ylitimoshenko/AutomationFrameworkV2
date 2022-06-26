@@ -2,6 +2,7 @@ package BondarenkoYevhenii.Tests.Pages;
 
 import ClasesToAll.BasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,11 +15,9 @@ public class YakabooHomePage extends BasePage {
     }
 
     public static final String ABOUT_BTN = "//a[text()='Про Yakaboo']";
-    public WebElement aboutBtn(){ return findElementByXpath(ABOUT_BTN);}
 
-
-
-
-
+    public WebElement aboutBtn() {
+        return findElementByXpath(ABOUT_BTN);
+    }
 }
 
