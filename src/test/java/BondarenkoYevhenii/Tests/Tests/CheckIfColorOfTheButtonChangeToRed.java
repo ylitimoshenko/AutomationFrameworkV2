@@ -27,7 +27,3 @@ public class CheckIfColorOfTheButtonChangeToRed extends TestInit {
     }
 
 }
-
-
-
-
