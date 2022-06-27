@@ -1,4 +1,4 @@
-package JuliaTymoshenko.JAVACore.PlusMines.PlusMines;
+package JuliaTymoshenko.JAVACore;
 
 public class ClassPlusMinesMethod {
     public int plus(int a, int b){
