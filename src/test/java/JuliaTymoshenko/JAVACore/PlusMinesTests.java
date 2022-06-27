@@ -1,4 +1,4 @@
-package JuliaTymoshenko.JAVACore.PlusMines.PlusMines;
+package JuliaTymoshenko.JAVACore;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
