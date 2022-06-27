@@ -1,5 +1,6 @@
-package JuliaTymoshenko.JAVACore;
+package JuliaTymoshenko.JAVACore.PlusMinus;
 
+import JuliaTymoshenko.JAVACore.PlusMinus.ClassPlusMinesMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,7 +14,7 @@ public class PlusMinesTests {
     @Test
     public void plusTestNegative() {
         ClassPlusMinesMethod classPlusMinesMethod = new ClassPlusMinesMethod();
-        Assert.assertTrue(25 == classPlusMinesMethod.plus(12, 8));
+        Assert.assertFalse(25 == classPlusMinesMethod.plus(11, 7));
     }
 
     @Test
