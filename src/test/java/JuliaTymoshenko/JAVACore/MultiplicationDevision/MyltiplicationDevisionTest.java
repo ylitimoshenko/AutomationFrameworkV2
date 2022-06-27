@@ -1,7 +1,5 @@
 package JuliaTymoshenko.JAVACore.MultiplicationDevision;
 
-import JuliaTymoshenko.JAVACore.ClassPlusMinesMethod;
-import org.checkerframework.checker.units.qual.A;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
