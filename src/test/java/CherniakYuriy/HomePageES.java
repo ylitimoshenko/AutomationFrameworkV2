@@ -1,9 +1,9 @@
 package CherniakYuriy;
 
+import ClasesToAll.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import ClasesToAll.BasePage;
 
 import java.util.ArrayList;
 
@@ -49,6 +49,7 @@ public class HomePageES extends BasePage {
         ArrayList<String> tabs = new ArrayList(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
     }
+
     public void waitForNewTabOpened(Integer seconds) {
         for (int a = 0; a < seconds * 2; a++) {
             ArrayList<String> tabs2 = new ArrayList(driver.getWindowHandles());
