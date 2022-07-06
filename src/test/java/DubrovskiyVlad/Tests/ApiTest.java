@@ -1,10 +1,10 @@
 package DubrovskiyVlad.Tests;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.ApiPage;
 import DubrovskiyVlad.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class ApiTest extends TestInit {
 

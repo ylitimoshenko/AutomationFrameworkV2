@@ -1,8 +1,8 @@
 package KulykYuliya.Tests;
 
+import ClasesToAll.TestInit;
 import KulykYuliya.Pages.HomePage;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class ClickBtnTakeOn extends TestInit {
     @Test

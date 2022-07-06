@@ -1,12 +1,11 @@
 package KulykYuliya.Tests;
 
+import ClasesToAll.TestInit;
 import KulykYuliya.Pages.HomePage;
 import KulykYuliya.Pages.LoginPage;
-import KulykYuliya.Pages.RegistrationPage;
 import KulykYuliya.Pages.RestPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class TasksForGira extends TestInit {
     @Test

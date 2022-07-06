@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="All tests" verbose="1" >
+    <test name="UITests">
+        <classes>
+            <class name="JuliaTymoshenko.PecodeTestTask.PecodeUITests" />
+        </classes>
+    </test>
+
+    <test name="APITests" parallel = "methods" thread-count = "3">
+        <classes>
+            <class name="JuliaTymoshenko.PecodeTestTask.PecodeAPITests" />
+        </classes>
+    </test>
+</suite>

@@ -1,9 +1,9 @@
 package NazarukBogdan.Tests;
 
+import ClasesToAll.TestInit;
 import NazarukBogdan.Pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class AboutEatStreetTests extends TestInit {
     @Test

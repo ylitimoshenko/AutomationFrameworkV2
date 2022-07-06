@@ -1,11 +1,11 @@
 package OlenaLevychkina.Tests;
 
+import ClasesToAll.TestInit;
 import DubrovskiyVlad.Pages.HomePage;
 import OlenaLevychkina.Web.EatstreetPageSignIn;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class TestEatstreet extends TestInit {
     @Test

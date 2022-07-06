@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="All tests" verbose="1" >
+    <test name="UITests">
+        <classes>
+            <class name="IraKaminska.EatStreet.Tests.RestaurantsInLasVegas" />
+            <class name="IraKaminska.EatStreet.Tests.RestaurantsInLosAngelesThatDeliverFood" />
+            <class name="IraKaminska.EatStreet.Tests.RestaurantsInWashingtonThatDeliverHealthyFood" />
+        </classes>
+    </test>
+
+<!--    <test name="APITests" parallel = "methods" thread-count = "3">-->
+<!--        <classes>-->
+<!--            <class name="PecodeLogin.Tests.PecodeAPITests" />-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->

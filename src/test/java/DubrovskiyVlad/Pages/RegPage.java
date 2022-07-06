@@ -1,7 +1,7 @@
 package DubrovskiyVlad.Pages;
 
 import org.openqa.selenium.WebDriver;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
 public class RegPage extends BasePage {
     public RegPage(WebDriver driver) {

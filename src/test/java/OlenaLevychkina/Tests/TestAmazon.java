@@ -1,9 +1,9 @@
 package OlenaLevychkina.Tests;
 
+import ClasesToAll.TestInit;
 import OlenaLevychkina.Web.AmazonHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class TestAmazon extends TestInit {
     @Test

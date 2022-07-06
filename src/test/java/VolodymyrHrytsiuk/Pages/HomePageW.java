@@ -3,10 +3,10 @@ package VolodymyrHrytsiuk.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pageobject.BasePage;
+import ClasesToAll.BasePage;
 
-public class HomePage extends BasePage {
-    public HomePage(WebDriver driver) {
+public class HomePageW extends BasePage {
+    public HomePageW(WebDriver driver) {
         super(driver);
     }
 

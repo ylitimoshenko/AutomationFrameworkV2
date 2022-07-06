@@ -1,12 +1,10 @@
 package KovalchukVlad.Tests;
 
+import ClasesToAll.TestInit;
 import KovalchukVlad.Pages.ApiPage;
 import KovalchukVlad.Pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
-
-import static pageobject.BasePage.driver;
 
 public class ApiTest extends TestInit {
 

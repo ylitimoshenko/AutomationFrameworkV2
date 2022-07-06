@@ -1,15 +1,15 @@
 package JuliaTymoshenko.EatStreet.Tests;
 
-import JuliaTymoshenko.Pages.HomePage;
+import ClasesToAll.TestInit;
+import JuliaTymoshenko.Pages.EatstreetPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tests.TestInit;
 
 public class SelectRestorants extends TestInit {
 
     @Test
     public void sortByRatingRestInDallas() {
-        HomePage homePage = new HomePage(driver);
+        EatstreetPage homePage = new EatstreetPage(driver);
         openUrl("https://qa2.eatstreet.com/");
         homePage.getAdressInput().sendKeys("Dallas, TX");
         sleep(2);
